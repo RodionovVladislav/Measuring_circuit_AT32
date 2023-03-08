@@ -1,0 +1,11 @@
+.\objects\usart_interrupts.o: user\usart_interrupts.c
+.\objects\usart_interrupts.o: .\include\interrupts.h
+.\objects\usart_interrupts.o: .\include\at32f403a_407_board.h
+.\objects\usart_interrupts.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\usart_interrupts.o: C:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include\at32f403a_407.h
+.\objects\usart_interrupts.o: C:\Keil\ARM\CMSIS\Include\core_cm4.h
+.\objects\usart_interrupts.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\usart_interrupts.o: C:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+.\objects\usart_interrupts.o: C:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+.\objects\usart_interrupts.o: C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h
+.\objects\usart_interrupts.o: C:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include\system_at32f403a_407.h

@@ -1,0 +1,1924 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.25.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 2 ¬Î‡‰, 1, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.25.2.0
+Toolchain Path:  C:\Keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.25.2.0
+Dialog DLL:      DCM.DLL V1.17.1.0
+Target DLL:      UL2CM3.DLL V1.160.12.0
+Dialog DLL:      TCM.DLL V1.35.1.0
+ 
+<h2>Project:</h2>
+C:\Users\¬Î‡‰\Desktop\Measuring_circuit_AT32\AT32Prog.uvprojx
+Project File Date:  03/06/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil\ARM\ARMCC\Bin'
+Build target 'Measuring_circuit_AT32'
+compiling at32f403a_407_adc.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+firmware\at32f403a_407_adc.c: 0 warnings, 1 error
+compiling at32f403a_407_board.c...
+C:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include\at32f403a_407.h(569): error:  #5: cannot open source input file "at32f403a_407_def.h": No such file or directory
+  #include "at32f403a_407_def.h"
+bsp\at32f403a_407_board.c: 0 warnings, 1 error
+compiling at32f403a_407_bpr.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+firmware\at32f403a_407_bpr.c: 0 warnings, 1 error
+assembling startup_at32f403a_407.s...
+cmsis\startup_at32f403a_407.s(1): error: A1167E: Invalid line start 
+cmsis\startup_at32f403a_407.s(2): error: A1137E: Unexpected characters at end of line
+cmsis\startup_at32f403a_407.s(3): error: A1159E: Label missing from line start
+cmsis\startup_at32f403a_407.s(4): error: A1159E: Label missing from line start
+cmsis\startup_at32f403a_407.s(5): error: A1159E: Label missing from line start
+cmsis\startup_at32f403a_407.s(6): error: A1159E: Label missing from line start
+cmsis\startup_at32f403a_407.s(7): error: A1159E: Label missing from line start
+cmsis\startup_at32f403a_407.s(8): error: A1159E: Label missing from line start
+cmsis\startup_at32f403a_407.s(9): error: A1159E: Label missing from line start
+cmsis\startup_at32f403a_407.s(10): error: A1159E: Label missing from line start
+cmsis\startup_at32f403a_407.s(11): error: A1159E: Label missing from line start
+cmsis\startup_at32f403a_407.s(12): error: A1159E: Label missing from line start
+cmsis\startup_at32f403a_407.s(13): error: A1159E: Label missing from line start
+cmsis\startup_at32f403a_407.s(14): error: A1159E: Label missing from line start
+cmsis\startup_at32f403a_407.s(15): error: A1159E: Label missing from line start
+cmsis\startup_at32f403a_407.s(16): error: A1159E: Label missing from line start
+cmsis\startup_at32f403a_407.s(17): error: A1137E: Unexpected characters at end of line
+cmsis\startup_at32f403a_407.s(18): error: A1137E: Unexpected characters at end of line
+cmsis\startup_at32f403a_407.s(20): error: A1137E: Unexpected characters at end of line
+cmsis\startup_at32f403a_407.s(21): error: A1137E: Unexpected characters at end of line
+cmsis\startup_at32f403a_407.s(22): error: A1137E: Unexpected characters at end of line
+cmsis\startup_at32f403a_407.s(23): error: A1137E: Unexpected characters at end of line
+cmsis\startup_at32f403a_407.s(25): error: A1163E: Unknown opcode g_pfnVectors , expecting opcode or Macro
+cmsis\startup_at32f403a_407.s(26): error: A1163E: Unknown opcode Default_Handler , expecting opcode or Macro
+cmsis\startup_at32f403a_407.s(28): error: A1163E: Unknown opcode start , expecting opcode or Macro
+cmsis\startup_at32f403a_407.s(29): error: A1163E: Unknown opcode in , expecting opcode or Macro
+cmsis\startup_at32f403a_407.s(30): error: A1163E: Unknown opcode _sidata , expecting opcode or Macro
+cmsis\startup_at32f403a_407.s(31): error: A1163E: Unknown opcode start , expecting opcode or Macro
+cmsis\startup_at32f403a_407.s(32): error: A1163E: Unknown opcode _sdata , expecting opcode or Macro
+cmsis\startup_at32f403a_407.s(33): error: A1167E: Invalid line start 
+cmsis\startup_at32f403a_407.s(34): error: A1163E: Unknown opcode _edata , expecting opcode or Macro
+cmsis\startup_at32f403a_407.s(35): error: A1163E: Unknown opcode start , expecting opcode or Macro
+cmsis\startup_at32f403a_407.s(36): error: A1163E: Unknown opcode _sbss , expecting opcode or Macro
+cmsis\startup_at32f403a_407.s(37): error: A1167E: Invalid line start 
+cmsis\startup_at32f403a_407.s(38): error: A1163E: Unknown opcode _ebss , expecting opcode or Macro
+cmsis\startup_at32f403a_407.s(39): error: A1163E: Unknown opcode stack , expecting opcode or Macro
+cmsis\startup_at32f403a_407.s(41): error: A1167E: Invalid line start 
+cmsis\startup_at32f403a_407.s(42): error: A1159E: Label missing from line start
+cmsis\startup_at32f403a_407.s(43): error: A1159E: Label missing from line start
+cmsis\startup_at32f403a_407.s(44): error: A1159E: Label missing from line start
+cmsis\startup_at32f403a_407.s(45): error: A1159E: Label missing from line start
+cmsis\startup_at32f403a_407.s(46): error: A1159E: Label missing from line start
+cmsis\startup_at32f403a_407.s(47): error: A1159E: Label missing from line start
+cmsis\startup_at32f403a_407.s(50): error: A1137E: Unexpected characters at end of line
+cmsis\startup_at32f403a_407.s(51): error: A1137E: Unexpected characters at end of line
+cmsis\startup_at32f403a_407.s(52): error: A1137E: Unexpected characters at end of line
+cmsis\startup_at32f403a_407.s(53): error: A1167E: Invalid line start 
+cmsis\startup_at32f403a_407.s(55): error: A1163E: Unknown opcode Copy , expecting opcode or Macro
+cmsis\startup_at32f403a_407.s(56): error: A1105E: Area directive missing
+cmsis\startup_at32f403a_407.s(56): warning: A1088W: Faking declaration of area AREA |$$$$$$$|
+cmsis\startup_at32f403a_407.s(59): error: A1167E: Invalid line start 
+compiling at32f403a_407_can.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+firmware\at32f403a_407_can.c: 0 warnings, 1 error
+compiling at32f403a_407_acc.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+firmware\at32f403a_407_acc.c: 0 warnings, 1 error
+compiling system_at32f403a_407.c...
+C:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include\at32f403a_407.h(569): error:  #5: cannot open source input file "at32f403a_407_def.h": No such file or directory
+  #include "at32f403a_407_def.h"
+cmsis\system_at32f403a_407.c: 0 warnings, 1 error
+compiling at32f403a_407_crc.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+firmware\at32f403a_407_crc.c: 0 warnings, 1 error
+compiling at32f403a_407_crm.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+firmware\at32f403a_407_crm.c: 0 warnings, 1 error
+compiling at32f403a_407_dac.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+firmware\at32f403a_407_dac.c: 0 warnings, 1 error
+compiling at32f403a_407_dma.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+firmware\at32f403a_407_dma.c: 0 warnings, 1 error
+compiling at32f403a_407_debug.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+firmware\at32f403a_407_debug.c: 0 warnings, 1 error
+compiling at32f403a_407_flash.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+firmware\at32f403a_407_flash.c: 0 warnings, 1 error
+compiling at32f403a_407_emac.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+firmware\at32f403a_407_emac.c: 0 warnings, 1 error
+compiling at32f403a_407_gpio.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+firmware\at32f403a_407_gpio.c: 0 warnings, 1 error
+compiling at32f403a_407_exint.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+firmware\at32f403a_407_exint.c: 0 warnings, 1 error
+compiling at32f403a_407_i2c.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+firmware\at32f403a_407_i2c.c: 0 warnings, 1 error
+compiling at32f403a_407_pwc.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+firmware\at32f403a_407_pwc.c: 0 warnings, 1 error
+compiling at32f403a_407_misc.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+firmware\at32f403a_407_misc.c: 0 warnings, 1 error
+compiling at32f403a_407_rtc.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+firmware\at32f403a_407_rtc.c: 0 warnings, 1 error
+compiling at32f403a_407_sdio.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+firmware\at32f403a_407_sdio.c: 0 warnings, 1 error
+compiling at32f403a_407_spi.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+firmware\at32f403a_407_spi.c: 0 warnings, 1 error
+compiling at32f403a_407_tmr.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+firmware\at32f403a_407_tmr.c: 0 warnings, 1 error
+compiling at32f403a_407_usart.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+firmware\at32f403a_407_usart.c: 0 warnings, 1 error
+compiling at32f403a_407_wdt.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+firmware\at32f403a_407_wdt.c: 0 warnings, 1 error
+compiling at32f403a_407_usb.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+firmware\at32f403a_407_usb.c: 0 warnings, 1 error
+compiling at32f403a_407_wwdt.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+firmware\at32f403a_407_wwdt.c: 0 warnings, 1 error
+assembling AT32F407xx_v2.svd...
+SVD\AT32F407xx_v2.svd(1): error: A1163E: Unknown opcode version="1.0" , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(3): error: A1163E: Unknown opcode File , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(5): error: A1167E: Invalid line start 
+SVD\AT32F407xx_v2.svd(6): error: A1163E: Unknown opcode Copyright , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(8): error: A1163E: Unknown opcode Purpose: , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(9): error: A1163E: Unknown opcode This , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(10): error: A1163E: Unknown opcode for , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(12): error: A1163E: Unknown opcode Redistribution , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(13): error: A1163E: Unknown opcode modification, , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(14): error: A1137E: Unexpected characters at end of line
+SVD\AT32F407xx_v2.svd(15): error: A1163E: Unknown opcode notice, , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(16): error: A1137E: Unexpected characters at end of line
+SVD\AT32F407xx_v2.svd(17): error: A1163E: Unknown opcode notice, , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(18): error: A1163E: Unknown opcode documentation , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(19): error: A1137E: Unexpected characters at end of line
+SVD\AT32F407xx_v2.svd(20): error: A1163E: Unknown opcode to , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(21): error: A1163E: Unknown opcode specific , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(23): error: A1163E: Unknown opcode THIS , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(24): error: A1647E: Bad register name symbol, expected Integer register
+SVD\AT32F407xx_v2.svd(25): error: A1163E: Unknown opcode IMPLIED , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(26): error: A1163E: Unknown opcode ARE , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(27): error: A1163E: Unknown opcode LIABLE , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(28): error: A1163E: Unknown opcode CONSEQUENTIAL , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(29): error: A1163E: Unknown opcode SUBSTITUTE , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(30): error: A1163E: Unknown opcode INTERRUPTION) , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(31): error: A1163E: Unknown opcode CONTRACT, , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(32): error: A1163E: Unknown opcode ARISING , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(33): error: A1163E: Unknown opcode POSSIBILITY , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(34): error: A1137E: Unexpected characters at end of line
+SVD\AT32F407xx_v2.svd(36): error: A1163E: Unknown opcode schemaVersion="1.1" , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(37): error: A1137E: Unexpected characters at end of line
+SVD\AT32F407xx_v2.svd(38): error: A1137E: Unexpected characters at end of line
+SVD\AT32F407xx_v2.svd(39): error: A1137E: Unexpected characters at end of line
+SVD\AT32F407xx_v2.svd(40): error: A1137E: Unexpected characters at end of line
+SVD\AT32F407xx_v2.svd(41): error: A1137E: Unexpected characters at end of line
+SVD\AT32F407xx_v2.svd(42): error: A1137E: Unexpected characters at end of line
+SVD\AT32F407xx_v2.svd(43): error: A1137E: Unexpected characters at end of line
+SVD\AT32F407xx_v2.svd(44): error: A1630E: Specified processor or architecture does not support ARM instructions
+SVD\AT32F407xx_v2.svd(45): error: A1163E: Unknown opcode processor , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(46): error: A1163E: Unknown opcode suitable , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(47): error: A1163E: Unknown opcode Modifications , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(48): error: A1137E: Unexpected characters at end of line
+SVD\AT32F407xx_v2.svd(49): error: A1163E: Unknown opcode THIS , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(50): error: A1163E: Unknown opcode OR , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(51): error: A1163E: Unknown opcode MERCHANTABILITY , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(52): error: A1630E: Specified processor or architecture does not support ARM instructions
+SVD\AT32F407xx_v2.svd(53): error: A1163E: Unknown opcode CONSEQUENTIAL , expecting opcode or Macro
+SVD\AT32F407xx_v2.svd(54): error: A1137E: Unexpected characters at end of line
+SVD\AT32F407xx_v2.svd(55): error: A1137E: Unexpected characters at end of line
+SVD\AT32F407xx_v2.svd(56): error: A1137E: Unexpected characters at end of line
+compiling at32f403a_407_xmc.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+firmware\at32f403a_407_xmc.c: 0 warnings, 1 error
+compiling at32f403a_407_int.c...
+C:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include\at32f403a_407.h(569): error:  #5: cannot open source input file "at32f403a_407_def.h": No such file or directory
+  #include "at32f403a_407_def.h"
+user\at32f403a_407_int.c: 0 warnings, 1 error
+compiling at32f403a_407_clock.c...
+C:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include\at32f403a_407.h(569): error:  #5: cannot open source input file "at32f403a_407_def.h": No such file or directory
+  #include "at32f403a_407_def.h"
+user\at32f403a_407_clock.c: 0 warnings, 1 error
+compiling main.c...
+C:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include\at32f403a_407.h(569): error:  #5: cannot open source input file "at32f403a_407_def.h": No such file or directory
+  #include "at32f403a_407_def.h"
+user\main.c: 0 warnings, 1 error
+compiling can_interrupt.c...
+C:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include\at32f403a_407.h(569): error:  #5: cannot open source input file "at32f403a_407_def.h": No such file or directory
+  #include "at32f403a_407_def.h"
+user\can_interrupt.c: 0 warnings, 1 error
+compiling spi_interrupts.c...
+C:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include\at32f403a_407.h(569): error:  #5: cannot open source input file "at32f403a_407_def.h": No such file or directory
+  #include "at32f403a_407_def.h"
+user\spi_interrupts.c: 0 warnings, 1 error
+compiling tmr_interrupt.c...
+C:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include\at32f403a_407.h(569): error:  #5: cannot open source input file "at32f403a_407_def.h": No such file or directory
+  #include "at32f403a_407_def.h"
+user\tmr_interrupt.c: 0 warnings, 1 error
+compiling usart_interrupts.c...
+C:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include\at32f403a_407.h(569): error:  #5: cannot open source input file "at32f403a_407_def.h": No such file or directory
+  #include "at32f403a_407_def.h"
+user\usart_interrupts.c: 0 warnings, 1 error
+assembling startup_at32f403a_407.s...
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(1): error: A1167E: Invalid line start 
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(2): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(3): error: A1159E: Label missing from line start
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(4): error: A1159E: Label missing from line start
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(5): error: A1159E: Label missing from line start
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(6): error: A1159E: Label missing from line start
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(7): error: A1159E: Label missing from line start
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(8): error: A1159E: Label missing from line start
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(9): error: A1159E: Label missing from line start
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(10): error: A1159E: Label missing from line start
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(11): error: A1159E: Label missing from line start
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(12): error: A1159E: Label missing from line start
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(13): error: A1159E: Label missing from line start
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(14): error: A1159E: Label missing from line start
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(15): error: A1159E: Label missing from line start
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(16): error: A1159E: Label missing from line start
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(17): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(18): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(20): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(21): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(22): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(23): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(25): error: A1163E: Unknown opcode g_pfnVectors , expecting opcode or Macro
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(26): error: A1163E: Unknown opcode Default_Handler , expecting opcode or Macro
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(28): error: A1163E: Unknown opcode start , expecting opcode or Macro
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(29): error: A1163E: Unknown opcode in , expecting opcode or Macro
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(30): error: A1163E: Unknown opcode _sidata , expecting opcode or Macro
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(31): error: A1163E: Unknown opcode start , expecting opcode or Macro
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(32): error: A1163E: Unknown opcode _sdata , expecting opcode or Macro
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(33): error: A1167E: Invalid line start 
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(34): error: A1163E: Unknown opcode _edata , expecting opcode or Macro
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(35): error: A1163E: Unknown opcode start , expecting opcode or Macro
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(36): error: A1163E: Unknown opcode _sbss , expecting opcode or Macro
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(37): error: A1167E: Invalid line start 
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(38): error: A1163E: Unknown opcode _ebss , expecting opcode or Macro
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(39): error: A1163E: Unknown opcode stack , expecting opcode or Macro
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(41): error: A1167E: Invalid line start 
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(42): error: A1159E: Label missing from line start
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(43): error: A1159E: Label missing from line start
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(44): error: A1159E: Label missing from line start
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(45): error: A1159E: Label missing from line start
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(46): error: A1159E: Label missing from line start
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(47): error: A1159E: Label missing from line start
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(50): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(51): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(52): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(53): error: A1167E: Invalid line start 
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(55): error: A1163E: Unknown opcode Copy , expecting opcode or Macro
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(56): error: A1105E: Area directive missing
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(56): warning: A1088W: Faking declaration of area AREA |$$$$$$$|
+include\libraries\cmsis\cm4\device_support\startup\gcc\startup_at32f403a_407.s(59): error: A1167E: Invalid line start 
+compiling system_at32f403a_407.c...
+include\libraries\cmsis\cm4\device_support\at32f403a_407.h(569): error:  #5: cannot open source input file "at32f403a_407_def.h": No such file or directory
+  #include "at32f403a_407_def.h"
+include\libraries\cmsis\cm4\device_support\system_at32f403a_407.c: 0 warnings, 1 error
+compiling arm_abs_q7.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_abs_q7.c: 0 warnings, 1 error
+compiling arm_cl_tables.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\ComputeLibrary\Source\arm_cl_tables.c: 0 warnings, 1 error
+compiling arm_abs_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_abs_f32.c: 0 warnings, 1 error
+compiling arm_abs_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_abs_q15.c: 0 warnings, 1 error
+compiling arm_abs_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_abs_q31.c: 0 warnings, 1 error
+compiling arm_add_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_add_f32.c: 0 warnings, 1 error
+compiling arm_add_q7.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_add_q7.c: 0 warnings, 1 error
+compiling arm_add_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_add_q15.c: 0 warnings, 1 error
+compiling arm_and_u16.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_and_u16.c: 0 warnings, 1 error
+compiling arm_and_u32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_and_u32.c: 0 warnings, 1 error
+compiling arm_add_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_add_q31.c: 0 warnings, 1 error
+compiling arm_and_u8.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_and_u8.c: 0 warnings, 1 error
+compiling arm_dot_prod_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_dot_prod_f32.c: 0 warnings, 1 error
+compiling arm_dot_prod_q7.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_dot_prod_q7.c: 0 warnings, 1 error
+compiling arm_dot_prod_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_dot_prod_q15.c: 0 warnings, 1 error
+compiling arm_mult_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_mult_f32.c: 0 warnings, 1 error
+compiling arm_dot_prod_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_dot_prod_q31.c: 0 warnings, 1 error
+compiling arm_mult_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_mult_q15.c: 0 warnings, 1 error
+compiling arm_mult_q7.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_mult_q7.c: 0 warnings, 1 error
+compiling arm_mult_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_mult_q31.c: 0 warnings, 1 error
+compiling arm_negate_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_negate_q31.c: 0 warnings, 1 error
+compiling arm_negate_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_negate_q15.c: 0 warnings, 1 error
+compiling arm_negate_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_negate_f32.c: 0 warnings, 1 error
+compiling arm_negate_q7.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_negate_q7.c: 0 warnings, 1 error
+compiling arm_not_u8.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_not_u8.c: 0 warnings, 1 error
+compiling arm_not_u16.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_not_u16.c: 0 warnings, 1 error
+compiling arm_not_u32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_not_u32.c: 0 warnings, 1 error
+compiling arm_offset_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_offset_f32.c: 0 warnings, 1 error
+compiling arm_offset_q7.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_offset_q7.c: 0 warnings, 1 error
+compiling arm_or_u8.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_or_u8.c: 0 warnings, 1 error
+compiling arm_offset_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_offset_q15.c: 0 warnings, 1 error
+compiling arm_offset_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_offset_q31.c: 0 warnings, 1 error
+compiling arm_or_u32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_or_u32.c: 0 warnings, 1 error
+compiling arm_or_u16.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_or_u16.c: 0 warnings, 1 error
+compiling arm_scale_q7.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_scale_q7.c: 0 warnings, 1 error
+compiling arm_scale_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_scale_f32.c: 0 warnings, 1 error
+compiling arm_scale_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_scale_q15.c: 0 warnings, 1 error
+compiling arm_scale_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_scale_q31.c: 0 warnings, 1 error
+compiling arm_shift_q7.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_shift_q7.c: 0 warnings, 1 error
+compiling arm_shift_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_shift_q15.c: 0 warnings, 1 error
+compiling arm_shift_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_shift_q31.c: 0 warnings, 1 error
+compiling arm_sub_q7.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_sub_q7.c: 0 warnings, 1 error
+compiling arm_sub_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_sub_f32.c: 0 warnings, 1 error
+compiling arm_xor_u8.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_xor_u8.c: 0 warnings, 1 error
+compiling arm_sub_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_sub_q15.c: 0 warnings, 1 error
+compiling arm_sub_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_sub_q31.c: 0 warnings, 1 error
+compiling arm_xor_u16.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_xor_u16.c: 0 warnings, 1 error
+compiling arm_gaussian_naive_bayes_predict_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BayesFunctions\arm_gaussian_naive_bayes_predict_f32.c: 0 warnings, 1 error
+compiling arm_xor_u32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\arm_xor_u32.c: 0 warnings, 1 error
+compiling BasicMathFunctions.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BasicMathFunctions\BasicMathFunctions.c: 0 warnings, 1 error
+compiling BayesFunctions.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\BayesFunctions\BayesFunctions.c: 0 warnings, 1 error
+compiling arm_common_tables.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\CommonTables\arm_common_tables.c: 0 warnings, 1 error
+compiling CommonTables.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\CommonTables\CommonTables.c: 0 warnings, 1 error
+compiling arm_const_structs.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\CommonTables\arm_const_structs.c: 0 warnings, 1 error
+compiling arm_mve_tables.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\CommonTables\arm_mve_tables.c: 0 warnings, 1 error
+compiling ComplexMathFunctions.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\ComplexMathFunctions\ComplexMathFunctions.c: 0 warnings, 1 error
+compiling arm_cmplx_conj_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\ComplexMathFunctions\arm_cmplx_conj_f32.c: 0 warnings, 1 error
+compiling arm_cmplx_conj_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\ComplexMathFunctions\arm_cmplx_conj_q15.c: 0 warnings, 1 error
+compiling arm_cmplx_conj_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\ComplexMathFunctions\arm_cmplx_conj_q31.c: 0 warnings, 1 error
+compiling arm_cmplx_dot_prod_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\ComplexMathFunctions\arm_cmplx_dot_prod_f32.c: 0 warnings, 1 error
+compiling arm_cmplx_dot_prod_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\ComplexMathFunctions\arm_cmplx_dot_prod_q15.c: 0 warnings, 1 error
+compiling arm_cmplx_mag_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\ComplexMathFunctions\arm_cmplx_mag_f32.c: 0 warnings, 1 error
+compiling arm_cmplx_dot_prod_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\ComplexMathFunctions\arm_cmplx_dot_prod_q31.c: 0 warnings, 1 error
+compiling arm_cmplx_mag_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\ComplexMathFunctions\arm_cmplx_mag_q15.c: 0 warnings, 1 error
+compiling arm_cmplx_mag_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\ComplexMathFunctions\arm_cmplx_mag_q31.c: 0 warnings, 1 error
+compiling arm_cmplx_mag_squared_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\ComplexMathFunctions\arm_cmplx_mag_squared_f32.c: 0 warnings, 1 error
+compiling arm_cmplx_mag_squared_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\ComplexMathFunctions\arm_cmplx_mag_squared_q15.c: 0 warnings, 1 error
+compiling arm_cmplx_mag_squared_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\ComplexMathFunctions\arm_cmplx_mag_squared_q31.c: 0 warnings, 1 error
+compiling arm_cmplx_mult_cmplx_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\ComplexMathFunctions\arm_cmplx_mult_cmplx_f32.c: 0 warnings, 1 error
+compiling arm_cmplx_mult_cmplx_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\ComplexMathFunctions\arm_cmplx_mult_cmplx_q15.c: 0 warnings, 1 error
+compiling arm_cmplx_mult_cmplx_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\ComplexMathFunctions\arm_cmplx_mult_cmplx_q31.c: 0 warnings, 1 error
+compiling arm_cmplx_mult_real_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\ComplexMathFunctions\arm_cmplx_mult_real_f32.c: 0 warnings, 1 error
+compiling arm_cmplx_mult_real_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\ComplexMathFunctions\arm_cmplx_mult_real_q15.c: 0 warnings, 1 error
+compiling ControllerFunctions.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\ControllerFunctions\ControllerFunctions.c: 0 warnings, 1 error
+compiling arm_pid_init_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\ControllerFunctions\arm_pid_init_f32.c: 0 warnings, 1 error
+compiling arm_cmplx_mult_real_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\ComplexMathFunctions\arm_cmplx_mult_real_q31.c: 0 warnings, 1 error
+compiling arm_pid_init_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\ControllerFunctions\arm_pid_init_q15.c: 0 warnings, 1 error
+compiling arm_pid_reset_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\ControllerFunctions\arm_pid_reset_f32.c: 0 warnings, 1 error
+compiling arm_pid_init_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\ControllerFunctions\arm_pid_init_q31.c: 0 warnings, 1 error
+compiling arm_pid_reset_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\ControllerFunctions\arm_pid_reset_q15.c: 0 warnings, 1 error
+compiling arm_pid_reset_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\ControllerFunctions\arm_pid_reset_q31.c: 0 warnings, 1 error
+compiling arm_sin_cos_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\ControllerFunctions\arm_sin_cos_f32.c: 0 warnings, 1 error
+compiling arm_sin_cos_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\ControllerFunctions\arm_sin_cos_q31.c: 0 warnings, 1 error
+compiling DistanceFunctions.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\DistanceFunctions\DistanceFunctions.c: 0 warnings, 1 error
+compiling arm_boolean_distance.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\DistanceFunctions\arm_boolean_distance.c: 0 warnings, 1 error
+compiling arm_braycurtis_distance_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\DistanceFunctions\arm_braycurtis_distance_f32.c: 0 warnings, 1 error
+compiling arm_correlation_distance_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\DistanceFunctions\arm_correlation_distance_f32.c: 0 warnings, 1 error
+compiling arm_chebyshev_distance_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\DistanceFunctions\arm_chebyshev_distance_f32.c: 0 warnings, 1 error
+compiling arm_canberra_distance_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\DistanceFunctions\arm_canberra_distance_f32.c: 0 warnings, 1 error
+compiling arm_cityblock_distance_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\DistanceFunctions\arm_cityblock_distance_f32.c: 0 warnings, 1 error
+compiling arm_cosine_distance_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\DistanceFunctions\arm_cosine_distance_f32.c: 0 warnings, 1 error
+compiling arm_dice_distance.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\DistanceFunctions\arm_dice_distance.c: 0 warnings, 1 error
+compiling arm_hamming_distance.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\DistanceFunctions\arm_hamming_distance.c: 0 warnings, 1 error
+compiling arm_euclidean_distance_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\DistanceFunctions\arm_euclidean_distance_f32.c: 0 warnings, 1 error
+compiling arm_jaccard_distance.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\DistanceFunctions\arm_jaccard_distance.c: 0 warnings, 1 error
+compiling arm_jensenshannon_distance_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\DistanceFunctions\arm_jensenshannon_distance_f32.c: 0 warnings, 1 error
+compiling arm_kulsinski_distance.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\DistanceFunctions\arm_kulsinski_distance.c: 0 warnings, 1 error
+compiling arm_minkowski_distance_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\DistanceFunctions\arm_minkowski_distance_f32.c: 0 warnings, 1 error
+compiling arm_rogerstanimoto_distance.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\DistanceFunctions\arm_rogerstanimoto_distance.c: 0 warnings, 1 error
+compiling arm_russellrao_distance.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\DistanceFunctions\arm_russellrao_distance.c: 0 warnings, 1 error
+compiling arm_sokalmichener_distance.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\DistanceFunctions\arm_sokalmichener_distance.c: 0 warnings, 1 error
+compiling arm_sokalsneath_distance.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\DistanceFunctions\arm_sokalsneath_distance.c: 0 warnings, 1 error
+compiling FastMathFunctions.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FastMathFunctions\FastMathFunctions.c: 0 warnings, 1 error
+compiling arm_yule_distance.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\DistanceFunctions\arm_yule_distance.c: 0 warnings, 1 error
+compiling arm_cos_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FastMathFunctions\arm_cos_f32.c: 0 warnings, 1 error
+compiling arm_cos_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FastMathFunctions\arm_cos_q15.c: 0 warnings, 1 error
+compiling arm_cos_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FastMathFunctions\arm_cos_q31.c: 0 warnings, 1 error
+compiling arm_sin_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FastMathFunctions\arm_sin_f32.c: 0 warnings, 1 error
+compiling arm_sin_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FastMathFunctions\arm_sin_q31.c: 0 warnings, 1 error
+compiling arm_sin_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FastMathFunctions\arm_sin_q15.c: 0 warnings, 1 error
+compiling arm_sqrt_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FastMathFunctions\arm_sqrt_q15.c: 0 warnings, 1 error
+compiling arm_sqrt_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FastMathFunctions\arm_sqrt_q31.c: 0 warnings, 1 error
+compiling arm_vexp_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FastMathFunctions\arm_vexp_f32.c: 0 warnings, 1 error
+compiling arm_vlog_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FastMathFunctions\arm_vlog_f32.c: 0 warnings, 1 error
+compiling FilteringFunctions.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\FilteringFunctions.c: 0 warnings, 1 error
+compiling arm_biquad_cascade_df1_32x64_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_biquad_cascade_df1_32x64_q31.c: 0 warnings, 1 error
+compiling arm_biquad_cascade_df1_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_biquad_cascade_df1_f32.c: 0 warnings, 1 error
+compiling arm_biquad_cascade_df1_32x64_init_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_biquad_cascade_df1_32x64_init_q31.c: 0 warnings, 1 error
+compiling arm_biquad_cascade_df1_fast_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_biquad_cascade_df1_fast_q15.c: 0 warnings, 1 error
+compiling arm_biquad_cascade_df1_init_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_biquad_cascade_df1_init_q15.c: 0 warnings, 1 error
+compiling arm_biquad_cascade_df1_init_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_biquad_cascade_df1_init_f32.c: 0 warnings, 1 error
+compiling arm_biquad_cascade_df1_fast_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_biquad_cascade_df1_fast_q31.c: 0 warnings, 1 error
+compiling arm_biquad_cascade_df1_init_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_biquad_cascade_df1_init_q31.c: 0 warnings, 1 error
+compiling arm_biquad_cascade_df1_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_biquad_cascade_df1_q31.c: 0 warnings, 1 error
+compiling arm_biquad_cascade_df2T_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_biquad_cascade_df2T_f32.c: 0 warnings, 1 error
+compiling arm_biquad_cascade_df1_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_biquad_cascade_df1_q15.c: 0 warnings, 1 error
+compiling arm_biquad_cascade_df2T_f64.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_biquad_cascade_df2T_f64.c: 0 warnings, 1 error
+compiling arm_biquad_cascade_df2T_init_f64.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_biquad_cascade_df2T_init_f64.c: 0 warnings, 1 error
+compiling arm_biquad_cascade_df2T_init_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_biquad_cascade_df2T_init_f32.c: 0 warnings, 1 error
+compiling arm_biquad_cascade_stereo_df2T_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_biquad_cascade_stereo_df2T_f32.c: 0 warnings, 1 error
+compiling arm_conv_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_conv_f32.c: 0 warnings, 1 error
+compiling arm_biquad_cascade_stereo_df2T_init_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_biquad_cascade_stereo_df2T_init_f32.c: 0 warnings, 1 error
+compiling arm_conv_fast_opt_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_conv_fast_opt_q15.c: 0 warnings, 1 error
+compiling arm_conv_fast_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_conv_fast_q15.c: 0 warnings, 1 error
+compiling arm_conv_fast_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_conv_fast_q31.c: 0 warnings, 1 error
+compiling arm_conv_opt_q7.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_conv_opt_q7.c: 0 warnings, 1 error
+compiling arm_conv_opt_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_conv_opt_q15.c: 0 warnings, 1 error
+compiling arm_conv_partial_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_conv_partial_f32.c: 0 warnings, 1 error
+compiling arm_conv_partial_fast_opt_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_conv_partial_fast_opt_q15.c: 0 warnings, 1 error
+compiling arm_conv_partial_fast_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_conv_partial_fast_q31.c: 0 warnings, 1 error
+compiling arm_conv_partial_fast_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_conv_partial_fast_q15.c: 0 warnings, 1 error
+compiling arm_conv_partial_opt_q7.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_conv_partial_opt_q7.c: 0 warnings, 1 error
+compiling arm_conv_partial_opt_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_conv_partial_opt_q15.c: 0 warnings, 1 error
+compiling arm_conv_partial_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_conv_partial_q31.c: 0 warnings, 1 error
+compiling arm_conv_partial_q7.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_conv_partial_q7.c: 0 warnings, 1 error
+compiling arm_conv_partial_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_conv_partial_q15.c: 0 warnings, 1 error
+compiling arm_conv_q7.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_conv_q7.c: 0 warnings, 1 error
+compiling arm_conv_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_conv_q15.c: 0 warnings, 1 error
+compiling arm_correlate_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_correlate_f32.c: 0 warnings, 1 error
+compiling arm_conv_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_conv_q31.c: 0 warnings, 1 error
+compiling arm_correlate_fast_opt_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_correlate_fast_opt_q15.c: 0 warnings, 1 error
+compiling arm_correlate_fast_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_correlate_fast_q31.c: 0 warnings, 1 error
+compiling arm_correlate_fast_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_correlate_fast_q15.c: 0 warnings, 1 error
+compiling arm_correlate_opt_q7.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_correlate_opt_q7.c: 0 warnings, 1 error
+compiling arm_correlate_q7.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_correlate_q7.c: 0 warnings, 1 error
+compiling arm_correlate_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_correlate_q31.c: 0 warnings, 1 error
+compiling arm_correlate_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_correlate_q15.c: 0 warnings, 1 error
+compiling arm_fir_decimate_fast_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_decimate_fast_q15.c: 0 warnings, 1 error
+compiling arm_correlate_opt_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_correlate_opt_q15.c: 0 warnings, 1 error
+compiling arm_fir_decimate_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_decimate_f32.c: 0 warnings, 1 error
+compiling arm_fir_decimate_fast_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_decimate_fast_q31.c: 0 warnings, 1 error
+compiling arm_fir_decimate_init_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_decimate_init_f32.c: 0 warnings, 1 error
+compiling arm_fir_decimate_init_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_decimate_init_q15.c: 0 warnings, 1 error
+compiling arm_fir_decimate_init_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_decimate_init_q31.c: 0 warnings, 1 error
+compiling arm_fir_decimate_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_decimate_q15.c: 0 warnings, 1 error
+compiling arm_fir_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_f32.c: 0 warnings, 1 error
+compiling arm_fir_decimate_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_decimate_q31.c: 0 warnings, 1 error
+compiling arm_fir_fast_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_fast_q15.c: 0 warnings, 1 error
+compiling arm_fir_init_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_init_f32.c: 0 warnings, 1 error
+compiling arm_fir_fast_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_fast_q31.c: 0 warnings, 1 error
+compiling arm_fir_init_q7.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_init_q7.c: 0 warnings, 1 error
+compiling arm_fir_init_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_init_q31.c: 0 warnings, 1 error
+compiling arm_fir_init_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_init_q15.c: 0 warnings, 1 error
+compiling arm_fir_interpolate_init_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_interpolate_init_f32.c: 0 warnings, 1 error
+compiling arm_fir_interpolate_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_interpolate_f32.c: 0 warnings, 1 error
+compiling arm_fir_interpolate_init_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_interpolate_init_q15.c: 0 warnings, 1 error
+compiling arm_fir_interpolate_init_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_interpolate_init_q31.c: 0 warnings, 1 error
+compiling arm_fir_interpolate_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_interpolate_q15.c: 0 warnings, 1 error
+compiling arm_fir_interpolate_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_interpolate_q31.c: 0 warnings, 1 error
+compiling arm_fir_lattice_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_lattice_f32.c: 0 warnings, 1 error
+compiling arm_fir_lattice_init_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_lattice_init_f32.c: 0 warnings, 1 error
+compiling arm_fir_lattice_init_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_lattice_init_q15.c: 0 warnings, 1 error
+compiling arm_fir_lattice_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_lattice_q15.c: 0 warnings, 1 error
+compiling arm_fir_lattice_init_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_lattice_init_q31.c: 0 warnings, 1 error
+compiling arm_fir_lattice_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_lattice_q31.c: 0 warnings, 1 error
+compiling arm_fir_q7.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_q7.c: 0 warnings, 1 error
+compiling arm_fir_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_q15.c: 0 warnings, 1 error
+compiling arm_fir_sparse_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_sparse_f32.c: 0 warnings, 1 error
+compiling arm_fir_sparse_init_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_sparse_init_f32.c: 0 warnings, 1 error
+compiling arm_fir_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_q31.c: 0 warnings, 1 error
+compiling arm_fir_sparse_init_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_sparse_init_q15.c: 0 warnings, 1 error
+compiling arm_fir_sparse_init_q7.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_sparse_init_q7.c: 0 warnings, 1 error
+compiling arm_fir_sparse_init_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_sparse_init_q31.c: 0 warnings, 1 error
+compiling arm_fir_sparse_q7.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_sparse_q7.c: 0 warnings, 1 error
+compiling arm_fir_sparse_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_sparse_q15.c: 0 warnings, 1 error
+compiling arm_fir_sparse_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_fir_sparse_q31.c: 0 warnings, 1 error
+compiling arm_iir_lattice_init_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_iir_lattice_init_f32.c: 0 warnings, 1 error
+compiling arm_iir_lattice_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_iir_lattice_f32.c: 0 warnings, 1 error
+compiling arm_iir_lattice_init_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_iir_lattice_init_q15.c: 0 warnings, 1 error
+compiling arm_iir_lattice_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_iir_lattice_q15.c: 0 warnings, 1 error
+compiling arm_iir_lattice_init_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_iir_lattice_init_q31.c: 0 warnings, 1 error
+compiling arm_iir_lattice_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_iir_lattice_q31.c: 0 warnings, 1 error
+compiling arm_lms_init_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_lms_init_q15.c: 0 warnings, 1 error
+compiling arm_lms_init_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_lms_init_q31.c: 0 warnings, 1 error
+compiling arm_lms_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_lms_f32.c: 0 warnings, 1 error
+compiling arm_lms_init_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_lms_init_f32.c: 0 warnings, 1 error
+compiling arm_lms_norm_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_lms_norm_f32.c: 0 warnings, 1 error
+compiling arm_lms_norm_init_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_lms_norm_init_f32.c: 0 warnings, 1 error
+compiling arm_lms_norm_init_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_lms_norm_init_q15.c: 0 warnings, 1 error
+compiling arm_lms_norm_init_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_lms_norm_init_q31.c: 0 warnings, 1 error
+compiling arm_lms_norm_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_lms_norm_q31.c: 0 warnings, 1 error
+compiling arm_lms_norm_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_lms_norm_q15.c: 0 warnings, 1 error
+compiling arm_lms_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_lms_q31.c: 0 warnings, 1 error
+compiling arm_lms_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\FilteringFunctions\arm_lms_q15.c: 0 warnings, 1 error
+compiling MatrixFunctions.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\MatrixFunctions\MatrixFunctions.c: 0 warnings, 1 error
+compiling arm_mat_add_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\MatrixFunctions\arm_mat_add_f32.c: 0 warnings, 1 error
+compiling arm_mat_add_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\MatrixFunctions\arm_mat_add_q15.c: 0 warnings, 1 error
+compiling arm_mat_add_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\MatrixFunctions\arm_mat_add_q31.c: 0 warnings, 1 error
+compiling arm_mat_cmplx_mult_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\MatrixFunctions\arm_mat_cmplx_mult_f32.c: 0 warnings, 1 error
+compiling arm_mat_cmplx_mult_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\MatrixFunctions\arm_mat_cmplx_mult_q31.c: 0 warnings, 1 error
+compiling arm_mat_init_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\MatrixFunctions\arm_mat_init_f32.c: 0 warnings, 1 error
+compiling arm_mat_cmplx_mult_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\MatrixFunctions\arm_mat_cmplx_mult_q15.c: 0 warnings, 1 error
+compiling arm_mat_init_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\MatrixFunctions\arm_mat_init_q15.c: 0 warnings, 1 error
+compiling arm_mat_init_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\MatrixFunctions\arm_mat_init_q31.c: 0 warnings, 1 error
+compiling arm_mat_inverse_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\MatrixFunctions\arm_mat_inverse_f32.c: 0 warnings, 1 error
+compiling arm_mat_mult_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\MatrixFunctions\arm_mat_mult_f32.c: 0 warnings, 1 error
+compiling arm_mat_inverse_f64.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\MatrixFunctions\arm_mat_inverse_f64.c: 0 warnings, 1 error
+compiling arm_mat_mult_fast_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\MatrixFunctions\arm_mat_mult_fast_q31.c: 0 warnings, 1 error
+compiling arm_mat_mult_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\MatrixFunctions\arm_mat_mult_q15.c: 0 warnings, 1 error
+compiling arm_mat_mult_fast_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\MatrixFunctions\arm_mat_mult_fast_q15.c: 0 warnings, 1 error
+compiling arm_mat_mult_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\MatrixFunctions\arm_mat_mult_q31.c: 0 warnings, 1 error
+compiling arm_mat_scale_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\MatrixFunctions\arm_mat_scale_f32.c: 0 warnings, 1 error
+compiling arm_mat_scale_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\MatrixFunctions\arm_mat_scale_q15.c: 0 warnings, 1 error
+compiling arm_mat_scale_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\MatrixFunctions\arm_mat_scale_q31.c: 0 warnings, 1 error
+compiling arm_mat_sub_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\MatrixFunctions\arm_mat_sub_f32.c: 0 warnings, 1 error
+compiling arm_mat_sub_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\MatrixFunctions\arm_mat_sub_q15.c: 0 warnings, 1 error
+compiling arm_mat_sub_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\MatrixFunctions\arm_mat_sub_q31.c: 0 warnings, 1 error
+compiling arm_mat_trans_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\MatrixFunctions\arm_mat_trans_f32.c: 0 warnings, 1 error
+compiling arm_mat_trans_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\MatrixFunctions\arm_mat_trans_q15.c: 0 warnings, 1 error
+compiling StatisticsFunctions.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\StatisticsFunctions.c: 0 warnings, 1 error
+compiling arm_entropy_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_entropy_f32.c: 0 warnings, 1 error
+compiling arm_mat_trans_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\MatrixFunctions\arm_mat_trans_q31.c: 0 warnings, 1 error
+compiling arm_entropy_f64.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_entropy_f64.c: 0 warnings, 1 error
+compiling arm_kullback_leibler_f64.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_kullback_leibler_f64.c: 0 warnings, 1 error
+compiling arm_kullback_leibler_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_kullback_leibler_f32.c: 0 warnings, 1 error
+compiling arm_logsumexp_dot_prod_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_logsumexp_dot_prod_f32.c: 0 warnings, 1 error
+compiling arm_max_no_idx_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_max_no_idx_f32.c: 0 warnings, 1 error
+compiling arm_logsumexp_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_logsumexp_f32.c: 0 warnings, 1 error
+compiling arm_max_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_max_f32.c: 0 warnings, 1 error
+compiling arm_max_q7.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_max_q7.c: 0 warnings, 1 error
+compiling arm_max_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_max_q15.c: 0 warnings, 1 error
+compiling arm_max_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_max_q31.c: 0 warnings, 1 error
+compiling arm_mean_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_mean_f32.c: 0 warnings, 1 error
+compiling arm_mean_q7.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_mean_q7.c: 0 warnings, 1 error
+compiling arm_mean_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_mean_q15.c: 0 warnings, 1 error
+compiling arm_min_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_min_f32.c: 0 warnings, 1 error
+compiling arm_mean_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_mean_q31.c: 0 warnings, 1 error
+compiling arm_min_q7.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_min_q7.c: 0 warnings, 1 error
+compiling arm_min_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_min_q15.c: 0 warnings, 1 error
+compiling arm_min_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_min_q31.c: 0 warnings, 1 error
+compiling arm_power_q7.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_power_q7.c: 0 warnings, 1 error
+compiling arm_power_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_power_f32.c: 0 warnings, 1 error
+compiling arm_power_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_power_q31.c: 0 warnings, 1 error
+compiling arm_power_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_power_q15.c: 0 warnings, 1 error
+compiling arm_rms_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_rms_q15.c: 0 warnings, 1 error
+compiling arm_rms_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_rms_f32.c: 0 warnings, 1 error
+compiling arm_rms_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_rms_q31.c: 0 warnings, 1 error
+compiling arm_std_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_std_f32.c: 0 warnings, 1 error
+compiling arm_std_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_std_q15.c: 0 warnings, 1 error
+compiling arm_var_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_var_f32.c: 0 warnings, 1 error
+compiling arm_std_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_std_q31.c: 0 warnings, 1 error
+compiling arm_var_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_var_q15.c: 0 warnings, 1 error
+compiling arm_var_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\StatisticsFunctions\arm_var_q31.c: 0 warnings, 1 error
+compiling SupportFunctions.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\SupportFunctions.c: 0 warnings, 1 error
+compiling arm_barycenter_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_barycenter_f32.c: 0 warnings, 1 error
+compiling arm_bitonic_sort_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_bitonic_sort_f32.c: 0 warnings, 1 error
+compiling arm_bubble_sort_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_bubble_sort_f32.c: 0 warnings, 1 error
+compiling arm_copy_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_copy_q15.c: 0 warnings, 1 error
+compiling arm_copy_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_copy_f32.c: 0 warnings, 1 error
+compiling arm_copy_q7.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_copy_q7.c: 0 warnings, 1 error
+compiling arm_copy_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_copy_q31.c: 0 warnings, 1 error
+compiling arm_fill_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_fill_f32.c: 0 warnings, 1 error
+compiling arm_fill_q7.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_fill_q7.c: 0 warnings, 1 error
+compiling arm_fill_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_fill_q31.c: 0 warnings, 1 error
+compiling arm_fill_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_fill_q15.c: 0 warnings, 1 error
+compiling arm_float_to_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_float_to_q15.c: 0 warnings, 1 error
+compiling arm_float_to_q7.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_float_to_q7.c: 0 warnings, 1 error
+compiling arm_float_to_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_float_to_q31.c: 0 warnings, 1 error
+compiling arm_heap_sort_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_heap_sort_f32.c: 0 warnings, 1 error
+compiling arm_insertion_sort_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_insertion_sort_f32.c: 0 warnings, 1 error
+compiling arm_merge_sort_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_merge_sort_f32.c: 0 warnings, 1 error
+compiling arm_merge_sort_init_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_merge_sort_init_f32.c: 0 warnings, 1 error
+compiling arm_q7_to_float.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_q7_to_float.c: 0 warnings, 1 error
+compiling arm_q15_to_float.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_q15_to_float.c: 0 warnings, 1 error
+compiling arm_q7_to_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_q7_to_q15.c: 0 warnings, 1 error
+compiling arm_q7_to_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_q7_to_q31.c: 0 warnings, 1 error
+compiling arm_q15_to_q7.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_q15_to_q7.c: 0 warnings, 1 error
+compiling arm_q15_to_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_q15_to_q31.c: 0 warnings, 1 error
+compiling arm_q31_to_q7.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_q31_to_q7.c: 0 warnings, 1 error
+compiling arm_q31_to_float.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_q31_to_float.c: 0 warnings, 1 error
+compiling arm_q31_to_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_q31_to_q15.c: 0 warnings, 1 error
+compiling arm_selection_sort_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_selection_sort_f32.c: 0 warnings, 1 error
+compiling arm_quick_sort_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_quick_sort_f32.c: 0 warnings, 1 error
+compiling arm_sort_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_sort_f32.c: 0 warnings, 1 error
+compiling arm_sort_init_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_sort_init_f32.c: 0 warnings, 1 error
+compiling arm_spline_interp_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_spline_interp_f32.c: 0 warnings, 1 error
+compiling arm_spline_interp_init_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_spline_interp_init_f32.c: 0 warnings, 1 error
+compiling SVMFunctions.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SVMFunctions\SVMFunctions.c: 0 warnings, 1 error
+compiling arm_svm_linear_init_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SVMFunctions\arm_svm_linear_init_f32.c: 0 warnings, 1 error
+compiling arm_weighted_sum_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SupportFunctions\arm_weighted_sum_f32.c: 0 warnings, 1 error
+compiling arm_svm_linear_predict_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SVMFunctions\arm_svm_linear_predict_f32.c: 0 warnings, 1 error
+compiling arm_svm_polynomial_init_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SVMFunctions\arm_svm_polynomial_init_f32.c: 0 warnings, 1 error
+compiling arm_svm_polynomial_predict_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SVMFunctions\arm_svm_polynomial_predict_f32.c: 0 warnings, 1 error
+compiling arm_svm_rbf_init_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SVMFunctions\arm_svm_rbf_init_f32.c: 0 warnings, 1 error
+compiling arm_svm_rbf_predict_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SVMFunctions\arm_svm_rbf_predict_f32.c: 0 warnings, 1 error
+compiling arm_svm_sigmoid_init_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SVMFunctions\arm_svm_sigmoid_init_f32.c: 0 warnings, 1 error
+compiling TransformFunctions.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\TransformFunctions.c: 0 warnings, 1 error
+compiling arm_svm_sigmoid_predict_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\SVMFunctions\arm_svm_sigmoid_predict_f32.c: 0 warnings, 1 error
+compiling arm_bitreversal.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal.c: 0 warnings, 1 error
+assembling arm_bitreversal2.S...
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(31): error: A1163E: Unknown opcode defined , expecting opcode or Macro
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(32): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(33): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(34): error: A1163E: Unknown opcode defined , expecting opcode or Macro
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(35): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(36): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(37): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(38): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(39): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(40): error: A1163E: Unknown opcode defined , expecting opcode or Macro
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(41): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(42): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(43): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(44): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(45): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(46): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(47): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(48): error: A1163E: Unknown opcode defined , expecting opcode or Macro
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(49): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(50): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(51): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(52): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(53): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(54): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(55): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(56): error: A1163E: Unknown opcode defined , expecting opcode or Macro
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(57): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(58): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(59): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(60): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(61): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(62): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(63): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(65): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(66): error: A1167E: Invalid line start 
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(68): error: A1163E: Unknown opcode CODESECT , expecting opcode or Macro
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(81): error: A1163E: Unknown opcode defined , expecting opcode or Macro
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(82): error: A1163E: Unknown opcode defined , expecting opcode or Macro
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(83): error: A1163E: Unknown opcode defined , expecting opcode or Macro
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(84): error: A1163E: Unknown opcode defined , expecting opcode or Macro
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(85): error: A1163E: Unknown opcode defined , expecting opcode or Macro
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(86): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(87): error: A1137E: Unexpected characters at end of line
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(88): error: A1167E: Invalid line start 
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(90): error: A1163E: Unknown opcode defined , expecting opcode or Macro
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(92): error: A1105E: Area directive missing
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(92): warning: A1088W: Faking declaration of area AREA |$$$$$$$|
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(97): error: A1163E: Unknown opcode LABEL , expecting opcode or Macro
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(115): warning: A1464W: ENDP/ENDFUNC without corresponding PROC/FUNC
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(122): error: A1163E: Unknown opcode LABEL , expecting opcode or Macro
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(140): error: A1167E: Invalid line start 
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.S(142): error: A1108E: Multiply defined symbol 'arm_bitreversal_32'
+compiling arm_bitreversal2.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_bitreversal2.c: 0 warnings, 1 error
+compiling arm_cfft_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_cfft_f32.c: 0 warnings, 1 error
+compiling arm_cfft_f64.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_cfft_f64.c: 0 warnings, 1 error
+compiling arm_cfft_init_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_cfft_init_f32.c: 0 warnings, 1 error
+compiling arm_cfft_init_f64.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_cfft_init_f64.c: 0 warnings, 1 error
+compiling arm_cfft_init_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_cfft_init_q15.c: 0 warnings, 1 error
+compiling arm_cfft_init_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_cfft_init_q31.c: 0 warnings, 1 error
+compiling arm_cfft_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_cfft_q15.c: 0 warnings, 1 error
+compiling arm_cfft_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_cfft_q31.c: 0 warnings, 1 error
+compiling arm_cfft_radix2_init_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_cfft_radix2_init_q15.c: 0 warnings, 1 error
+compiling arm_cfft_radix2_init_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_cfft_radix2_init_f32.c: 0 warnings, 1 error
+compiling arm_cfft_radix2_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_cfft_radix2_f32.c: 0 warnings, 1 error
+compiling arm_cfft_radix2_init_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_cfft_radix2_init_q31.c: 0 warnings, 1 error
+compiling arm_cfft_radix2_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_cfft_radix2_q15.c: 0 warnings, 1 error
+compiling arm_cfft_radix2_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_cfft_radix2_q31.c: 0 warnings, 1 error
+compiling arm_cfft_radix4_init_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_cfft_radix4_init_f32.c: 0 warnings, 1 error
+compiling arm_cfft_radix4_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_cfft_radix4_f32.c: 0 warnings, 1 error
+compiling arm_cfft_radix4_init_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_cfft_radix4_init_q31.c: 0 warnings, 1 error
+compiling arm_cfft_radix4_init_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_cfft_radix4_init_q15.c: 0 warnings, 1 error
+compiling arm_cfft_radix4_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_cfft_radix4_q15.c: 0 warnings, 1 error
+compiling arm_cfft_radix4_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_cfft_radix4_q31.c: 0 warnings, 1 error
+compiling arm_dct4_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_dct4_f32.c: 0 warnings, 1 error
+compiling arm_cfft_radix8_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_cfft_radix8_f32.c: 0 warnings, 1 error
+compiling arm_dct4_init_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_dct4_init_f32.c: 0 warnings, 1 error
+compiling arm_dct4_init_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_dct4_init_q31.c: 0 warnings, 1 error
+compiling arm_dct4_init_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_dct4_init_q15.c: 0 warnings, 1 error
+compiling arm_dct4_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_dct4_q15.c: 0 warnings, 1 error
+compiling arm_dct4_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_dct4_q31.c: 0 warnings, 1 error
+compiling arm_rfft_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_rfft_f32.c: 0 warnings, 1 error
+compiling arm_rfft_fast_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_rfft_fast_f32.c: 0 warnings, 1 error
+compiling arm_rfft_fast_f64.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_rfft_fast_f64.c: 0 warnings, 1 error
+compiling arm_rfft_fast_init_f64.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_rfft_fast_init_f64.c: 0 warnings, 1 error
+compiling arm_rfft_fast_init_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_rfft_fast_init_f32.c: 0 warnings, 1 error
+compiling arm_rfft_init_f32.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_rfft_init_f32.c: 0 warnings, 1 error
+compiling arm_rfft_init_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_rfft_init_q15.c: 0 warnings, 1 error
+compiling arm_rfft_init_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_rfft_init_q31.c: 0 warnings, 1 error
+compiling arm_rfft_q15.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_rfft_q15.c: 0 warnings, 1 error
+compiling arm_rfft_q31.c...
+C:\Keil\ARM\CMSIS\Include\arm_math.h(273): error:  #5: cannot open source input file "ARMCM4.h": No such file or directory
+  #include "ARMCM4.h"
+include\libraries\cmsis\dsp\Source\TransformFunctions\arm_rfft_q31.c: 0 warnings, 1 error
+compiling at32f403a_407_acc.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+include\libraries\drivers\src\at32f403a_407_acc.c: 0 warnings, 1 error
+compiling at32f403a_407_bpr.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+include\libraries\drivers\src\at32f403a_407_bpr.c: 0 warnings, 1 error
+compiling at32f403a_407_adc.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+include\libraries\drivers\src\at32f403a_407_adc.c: 0 warnings, 1 error
+compiling at32f403a_407_can.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+include\libraries\drivers\src\at32f403a_407_can.c: 0 warnings, 1 error
+compiling at32f403a_407_crc.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+include\libraries\drivers\src\at32f403a_407_crc.c: 0 warnings, 1 error
+compiling at32f403a_407_crm.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+include\libraries\drivers\src\at32f403a_407_crm.c: 0 warnings, 1 error
+compiling at32f403a_407_debug.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+include\libraries\drivers\src\at32f403a_407_debug.c: 0 warnings, 1 error
+compiling at32f403a_407_dac.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+include\libraries\drivers\src\at32f403a_407_dac.c: 0 warnings, 1 error
+compiling at32f403a_407_emac.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+include\libraries\drivers\src\at32f403a_407_emac.c: 0 warnings, 1 error
+compiling at32f403a_407_dma.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+include\libraries\drivers\src\at32f403a_407_dma.c: 0 warnings, 1 error
+compiling at32f403a_407_exint.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+include\libraries\drivers\src\at32f403a_407_exint.c: 0 warnings, 1 error
+compiling at32f403a_407_flash.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+include\libraries\drivers\src\at32f403a_407_flash.c: 0 warnings, 1 error
+compiling at32f403a_407_gpio.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+include\libraries\drivers\src\at32f403a_407_gpio.c: 0 warnings, 1 error
+compiling at32f403a_407_i2c.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+include\libraries\drivers\src\at32f403a_407_i2c.c: 0 warnings, 1 error
+compiling at32f403a_407_misc.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+include\libraries\drivers\src\at32f403a_407_misc.c: 0 warnings, 1 error
+compiling at32f403a_407_pwc.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+include\libraries\drivers\src\at32f403a_407_pwc.c: 0 warnings, 1 error
+compiling at32f403a_407_spi.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+include\libraries\drivers\src\at32f403a_407_spi.c: 0 warnings, 1 error
+compiling at32f403a_407_sdio.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+include\libraries\drivers\src\at32f403a_407_sdio.c: 0 warnings, 1 error
+compiling at32f403a_407_rtc.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+include\libraries\drivers\src\at32f403a_407_rtc.c: 0 warnings, 1 error
+compiling at32f403a_407_tmr.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+include\libraries\drivers\src\at32f403a_407_tmr.c: 0 warnings, 1 error
+compiling at32f403a_407_usart.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+include\libraries\drivers\src\at32f403a_407_usart.c: 0 warnings, 1 error
+compiling at32f403a_407_wdt.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+include\libraries\drivers\src\at32f403a_407_wdt.c: 0 warnings, 1 error
+compiling at32f403a_407_usb.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+include\libraries\drivers\src\at32f403a_407_usb.c: 0 warnings, 1 error
+compiling at32f403a_407_xmc.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+include\libraries\drivers\src\at32f403a_407_xmc.c: 0 warnings, 1 error
+compiling at32f403a_407_wwdt.c...
+.\include\at32f403a_407_conf.h(92): error:  #5: cannot open source input file "at32f403a_407_crm.h": No such file or directory
+  #include "at32f403a_407_crm.h"
+include\libraries\drivers\src\at32f403a_407_wwdt.c: 0 warnings, 1 error
+".\Objects\AT32Prog.axf" - 617 Error(s), 4 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ArteryTek
+                
+                ArteryTek.AT32F403A_407_DFP.2.0.8
+                ArteryTek AT32F403A_407 Series Device Support,Drivers
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Measuring_circuit_AT32
+  C:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:19
+</pre>
+</body>
+</html>

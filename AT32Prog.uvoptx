@@ -22,7 +22,7 @@
   </DaveTm>
 
   <Target>
-    <TargetName>Measuring circuit</TargetName>
+    <TargetName>Measuring_circuit_AT32</TargetName>
     <ToolsetNumber>0x4</ToolsetNumber>
     <ToolsetName>ARM-ADS</ToolsetName>
     <TargetOption>

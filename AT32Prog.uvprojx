@@ -7,9 +7,10 @@
 
   <Targets>
     <Target>
-      <TargetName>Measuring circuit</TargetName>
+      <TargetName>Measuring_circuit_AT32</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
+      <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -335,7 +336,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\include;.\bsp;.\cmsis;.\debug;.\firmware;.\ldscripts;.\Listings;.\Objects;.\SVD;.\user</IncludePath>
+              <IncludePath>.\bsp;.\cmsis;.\debug;.\firmware;.\include;.\ldscripts;.\Listings;.\Objects;.\SVD;.\user</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
