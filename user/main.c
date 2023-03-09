@@ -45,6 +45,10 @@ void iterating_through_address_ports(void)
 	
 	gpio_bits_set(GPIOD, GPIO_PINS_4); //Передача по 7-ому порту
 	delay_ms(100);
+	
+	gpio_bits_reset(GPIOD, GPIO_PINS_4);
+	gpio_bits_reset(GPIOD, GPIO_PINS_5);
+	gpio_bits_reset(GPIOD, GPIO_PINS_6);
 }
 
 
@@ -78,6 +82,8 @@ void iterating_over_MUX(void)
 	delay_ms(100);
 	
 	iterating_through_address_ports();
+	
+	gpio_bits_reset(GPIOD, GPIO_PINS_7);
 }
 
 
@@ -103,6 +109,8 @@ void MUX_manage(void)
 	gpio_bits_set(GPIOD, GPIO_PINS_3);
 	
 	iterating_over_MUX();
+	
+	gpio_bits_reset(GPIOD, GPIO_PINS_3);
 }
 
 int main(void)
