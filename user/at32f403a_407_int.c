@@ -1,8 +1,6 @@
 /**
   **************************************************************************
   * @file     at32f403a_407_int.c
-  * @version  v2.1.2
-  * @date     2022-08-16
   * @brief    main interrupt service routines.
   **************************************************************************
   *                       Copyright notice & Disclaimer
@@ -131,6 +129,7 @@ void PendSV_Handler(void)
 void SysTick_Handler(void)
 {
 }
+
 /**
   * @}
   */

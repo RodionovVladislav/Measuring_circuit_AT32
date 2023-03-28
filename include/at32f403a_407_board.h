@@ -1,8 +1,6 @@
 /**
   **************************************************************************
   * @file     at32f403a_407_board.h
-  * @version  v2.1.2
-  * @date     2022-08-16
   * @brief    header file for at-start board. set of firmware functions to
   *           manage leds and push-button. initialize delay function.
   **************************************************************************
@@ -58,10 +56,6 @@ extern "C" {
 #if !defined (AT_START_F403A_V1)&& !defined (AT_START_F407_V1)
 #error "please select first the board at-start device used in your application (in at32f403a_407_board.h file)"
 #endif
-
-#define TARGET_PIN						GPIO_PINS_9
-#define TARGET_GPIO						GPIOB
-#define TARGET_GPIO_CRM_CLK             CRM_GPIOB_PERIPH_CLOCK
 
 /******************** define led ********************/
 typedef enum

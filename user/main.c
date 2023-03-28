@@ -23,29 +23,29 @@ void iterating_through_address_ports(void)
 {
 	gpio_bits_set(GPIOD, GPIO_PINS_4); //Передача по 1-ому порту
 	delay_ms(100);
-	
+
 	gpio_bits_reset(GPIOD, GPIO_PINS_4); //Передача по 2-ому порту
 	gpio_bits_set(GPIOD, GPIO_PINS_5);
 	delay_ms(100);
-	
+
 	gpio_bits_set(GPIOD, GPIO_PINS_4); //Передача по 3-ому порту
 	delay_ms(100);
-	
+
 	gpio_bits_reset(GPIOD, GPIO_PINS_4); //Передача по 4-ому порту
 	gpio_bits_reset(GPIOD, GPIO_PINS_5);
 	gpio_bits_set(GPIOD, GPIO_PINS_6);
 	delay_ms(100);
-	
+
 	gpio_bits_set(GPIOD, GPIO_PINS_4); //Передача по 5-ому порту
 	delay_ms(100);
-	
+
 	gpio_bits_reset(GPIOD, GPIO_PINS_4); //Передача по 6-ому порту
 	gpio_bits_set(GPIOD, GPIO_PINS_5);
 	delay_ms(100);
-	
+
 	gpio_bits_set(GPIOD, GPIO_PINS_4); //Передача по 7-ому порту
 	delay_ms(100);
-	
+
 	gpio_bits_reset(GPIOD, GPIO_PINS_4);
 	gpio_bits_reset(GPIOD, GPIO_PINS_5);
 	gpio_bits_reset(GPIOD, GPIO_PINS_6);
@@ -56,70 +56,70 @@ void iterating_over_MUX(void)
 {
 	gpio_bits_set(GPIOD, GPIO_PINS_7); //Включаю первый мультиплексор 8x1, передача по 0-ому порту
 	delay_ms(100);
-	
+
 	iterating_through_address_ports(); //Перебираются адресные входы
-	
+
 	gpio_bits_reset(GPIOD, GPIO_PINS_7);
 	gpio_bits_set(GPIOD, GPIO_PINS_8);
 	delay_ms(100);
-	
+
 	iterating_through_address_ports();
-	
+
 	gpio_bits_reset(GPIOD, GPIO_PINS_8);
 	gpio_bits_set(GPIOD, GPIO_PINS_9);
 	delay_ms(100);
-	
+
 	iterating_through_address_ports();
-	
+
 	gpio_bits_reset(GPIOD, GPIO_PINS_9);
 	gpio_bits_set(GPIOD, GPIO_PINS_10);
 	delay_ms(100);
-	
+
 	iterating_through_address_ports();
-	
+
 	gpio_bits_reset(GPIOD, GPIO_PINS_10);
 	gpio_bits_set(GPIOD, GPIO_PINS_11);
 	delay_ms(100);
-	
+
 	iterating_through_address_ports();
-	
+
 	gpio_bits_reset(GPIOD, GPIO_PINS_11);
 }
 
 
 void MUX_manage(void)
 {
-	port_init_output()
+	port_init_output();
 	gpio_bits_set(GPIOD, GPIO_PINS_3); //Включаю мультиплексор 1x8
 	gpio_bits_set(GPIOD, GPIO_PINS_0); //Подключение 1-ой платы
 
 	iterating_over_MUX();
-		
+
 	gpio_bits_reset(GPIOD, GPIO_PINS_0); //Выключение 1-ой и подключение 2-ой платы
 	gpio_bits_set(GPIOD, GPIO_PINS_1);
-	
+
 	iterating_over_MUX();
-	
+
 	gpio_bits_set(GPIOD, GPIO_PINS_0); // 3-я плата
-	
+
 	iterating_over_MUX();
-	
+
 	gpio_bits_reset(GPIOD, GPIO_PINS_0); // 4-я плата
 	gpio_bits_reset(GPIOD, GPIO_PINS_1);
 	gpio_bits_set(GPIOD, GPIO_PINS_2);
-	
+
 	iterating_over_MUX();
-	
+
 	gpio_bits_reset(GPIOD, GPIO_PINS_2);
 }
 
 
-void adc_init_structure(void
+void adc_init_structure(void)
 {
 	adc_base_config_type adc_base_struct;
 	adc_base_default_para_init(&adc_base_struct);
-	
-	
+
+
 }
 
 
@@ -128,6 +128,6 @@ int main(void)
 	MUX_manage();
 	while(1)
 	{
-			
+
 	}
 }

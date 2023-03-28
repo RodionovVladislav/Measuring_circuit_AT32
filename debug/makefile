@@ -38,48 +38,48 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := helloworld
+BUILD_ARTIFACT_NAME := Measuring_circuit_AT32
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 SECONDARY_FLASH += \
-helloworld.hex \
+Measuring_circuit_AT32.hex \
 
 SECONDARY_SIZE += \
-helloworld.siz \
+Measuring_circuit_AT32.siz \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: helloworld.elf secondary-outputs
+main-build: Measuring_circuit_AT32.elf secondary-outputs
 
 # Tool invocations
-helloworld.elf: $(OBJS) $(USER_OBJS) makefile objects.mk $(OPTIONAL_TOOL_DEPS)
+Measuring_circuit_AT32.elf: $(OBJS) $(USER_OBJS) makefile objects.mk $(OPTIONAL_TOOL_DEPS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GNU Arm Cross C Linker'
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -ffunction-sections -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal  -g -T "C:\Users\lukoshkov_ia\eclipse-workspace\helloworld/ldscripts/AT32F407xG_FLASH.ld" -Xlinker --gc-sections -Wl,-Map,"helloworld.map" --specs=nano.specs --specs=nosys.specs -o "helloworld.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -ffunction-sections  -g -T "C:\Users\Влад\Desktop\Measuring_circuit_AT32/ldscripts/AT32F407xC_FLASH.ld" -Xlinker --gc-sections -Wl,-Map,"Measuring_circuit_AT32.map" --specs=nano.specs --specs=nosys.specs -o "Measuring_circuit_AT32.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-helloworld.hex: helloworld.elf makefile objects.mk $(OPTIONAL_TOOL_DEPS)
+Measuring_circuit_AT32.hex: Measuring_circuit_AT32.elf makefile objects.mk $(OPTIONAL_TOOL_DEPS)
 	@echo 'Invoking: GNU Arm Cross Create Flash Image'
-	arm-none-eabi-objcopy -O ihex "helloworld.elf"  "helloworld.hex"
+	arm-none-eabi-objcopy -O ihex "Measuring_circuit_AT32.elf"  "Measuring_circuit_AT32.hex"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-helloworld.siz: helloworld.elf makefile objects.mk $(OPTIONAL_TOOL_DEPS)
+Measuring_circuit_AT32.siz: Measuring_circuit_AT32.elf makefile objects.mk $(OPTIONAL_TOOL_DEPS)
 	@echo 'Invoking: GNU Arm Cross Print Size'
-	arm-none-eabi-size --format=berkeley "helloworld.elf"
+	arm-none-eabi-size --format=berkeley "Measuring_circuit_AT32.elf"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(OBJS)$(SECONDARY_FLASH)$(SECONDARY_SIZE)$(ASM_DEPS)$(S_DEPS)$(S_UPPER_DEPS)$(C_DEPS) helloworld.elf
+	-$(RM) $(OBJS)$(SECONDARY_FLASH)$(SECONDARY_SIZE)$(ASM_DEPS)$(S_DEPS)$(S_UPPER_DEPS)$(C_DEPS) Measuring_circuit_AT32.elf
 	-@echo ' '
 
 secondary-outputs: $(SECONDARY_FLASH) $(SECONDARY_SIZE)

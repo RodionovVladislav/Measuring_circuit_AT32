@@ -1,230 +1,0 @@
-Dependencies for Project 'AT32Prog', Target 'Measuring_circuit_AT32': (DO NOT MODIFY !)
-F (.\bsp\at32f403a_407_board.c)(0x6358FE2A)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\at32f403a_407_board.o --omf_browse .\objects\at32f403a_407_board.crf --depend .\objects\at32f403a_407_board.d)
-I (.\include\at32f403a_407_board.h)(0x6358FE2A)
-I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x599F137C)
-I (C:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include\at32f403a_407.h)(0x6246DA24)
-I (C:\Keil\ARM\CMSIS\Include\core_cm4.h)(0x559D31EA)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599F137E)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x559D31EA)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x559D31EA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D31EA)
-I (C:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include\system_at32f403a_407.h)(0x6246DA2E)
-F (.\cmsis\startup_at32f403a_407.s)(0x633AC49D)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 525" --pd "AT32F407AVCT7 SETA 1"--list .\listings\startup_at32f403a_407.lst --xref -o .\objects\startup_at32f403a_407.o --depend .\objects\startup_at32f403a_407.d)
-F (.\cmsis\system_at32f403a_407.c)(0x633AC49D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\system_at32f403a_407.o --omf_browse .\objects\system_at32f403a_407.crf --depend .\objects\system_at32f403a_407.d)
-I (C:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include\at32f403a_407.h)(0x6246DA24)
-I (C:\Keil\ARM\CMSIS\Include\core_cm4.h)(0x559D31EA)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599F137E)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x559D31EA)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x559D31EA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D31EA)
-I (C:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include\system_at32f403a_407.h)(0x6246DA2E)
-F (.\debug\bsp\at32f403a_407_board.o)(0x6358FEAF)()
-F (.\debug\cmsis\startup_at32f403a_407.o)(0x633BE003)()
-F (.\debug\cmsis\system_at32f403a_407.o)(0x633BE004)()
-F (.\debug\firmware\at32f403a_407_acc.o)(0x633BDFFF)()
-F (.\debug\firmware\at32f403a_407_adc.o)(0x633BDFFF)()
-F (.\debug\firmware\at32f403a_407_bpr.o)(0x633BDFFF)()
-F (.\debug\firmware\at32f403a_407_can.o)(0x633BDFFF)()
-F (.\debug\firmware\at32f403a_407_crc.o)(0x633BDFFF)()
-F (.\debug\firmware\at32f403a_407_crm.o)(0x633BE000)()
-F (.\debug\firmware\at32f403a_407_dac.o)(0x633BE000)()
-F (.\debug\firmware\at32f403a_407_debug.o)(0x633BE000)()
-F (.\debug\firmware\at32f403a_407_dma.o)(0x633BE000)()
-F (.\debug\firmware\at32f403a_407_emac.o)(0x633BE000)()
-F (.\debug\firmware\at32f403a_407_exint.o)(0x633BE001)()
-F (.\debug\firmware\at32f403a_407_flash.o)(0x633BE001)()
-F (.\debug\firmware\at32f403a_407_gpio.o)(0x633BE001)()
-F (.\debug\firmware\at32f403a_407_i2c.o)(0x633BE001)()
-F (.\debug\firmware\at32f403a_407_misc.o)(0x633BE001)()
-F (.\debug\firmware\at32f403a_407_pwc.o)(0x633BE002)()
-F (.\debug\firmware\at32f403a_407_rtc.o)(0x633BE002)()
-F (.\debug\firmware\at32f403a_407_sdio.o)(0x633BE002)()
-F (.\debug\firmware\at32f403a_407_spi.o)(0x633BE002)()
-F (.\debug\firmware\at32f403a_407_tmr.o)(0x633BE002)()
-F (.\debug\firmware\at32f403a_407_usart.o)(0x633BE003)()
-F (.\debug\firmware\at32f403a_407_usb.o)(0x633BE003)()
-F (.\debug\firmware\at32f403a_407_wdt.o)(0x633BE003)()
-F (.\debug\firmware\at32f403a_407_wwdt.o)(0x633BE003)()
-F (.\debug\firmware\at32f403a_407_xmc.o)(0x633BE003)()
-F (.\debug\user\at32f403a_407_clock.o)(0x635A867C)()
-F (.\debug\user\at32f403a_407_int.o)(0x635A867C)()
-F (.\debug\user\can_interrupt.o)(0x635A867C)()
-F (.\debug\user\main.o)(0x635A867C)()
-F (.\debug\user\spi_interrupts.o)(0x635A867C)()
-F (.\debug\user\tmr_interrupt.o)(0x63624457)()
-F (.\debug\user\usart_interrupts.o)(0x635A867C)()
-F (.\firmware\at32f403a_407_acc.c)(0x633AC49D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\at32f403a_407_acc.o --omf_browse .\objects\at32f403a_407_acc.crf --depend .\objects\at32f403a_407_acc.d)
-I (.\include\at32f403a_407_conf.h)(0x633AC49D)
-F (.\firmware\at32f403a_407_adc.c)(0x633AC49D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\at32f403a_407_adc.o --omf_browse .\objects\at32f403a_407_adc.crf --depend .\objects\at32f403a_407_adc.d)
-I (.\include\at32f403a_407_conf.h)(0x633AC49D)
-F (.\firmware\at32f403a_407_bpr.c)(0x633AC49D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\at32f403a_407_bpr.o --omf_browse .\objects\at32f403a_407_bpr.crf --depend .\objects\at32f403a_407_bpr.d)
-I (.\include\at32f403a_407_conf.h)(0x633AC49D)
-F (.\firmware\at32f403a_407_can.c)(0x633AC49D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\at32f403a_407_can.o --omf_browse .\objects\at32f403a_407_can.crf --depend .\objects\at32f403a_407_can.d)
-I (.\include\at32f403a_407_conf.h)(0x633AC49D)
-F (.\firmware\at32f403a_407_crc.c)(0x633AC49D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\at32f403a_407_crc.o --omf_browse .\objects\at32f403a_407_crc.crf --depend .\objects\at32f403a_407_crc.d)
-I (.\include\at32f403a_407_conf.h)(0x633AC49D)
-F (.\firmware\at32f403a_407_crm.c)(0x633AC49D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\at32f403a_407_crm.o --omf_browse .\objects\at32f403a_407_crm.crf --depend .\objects\at32f403a_407_crm.d)
-I (.\include\at32f403a_407_conf.h)(0x633AC49D)
-F (.\firmware\at32f403a_407_dac.c)(0x633AC49D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\at32f403a_407_dac.o --omf_browse .\objects\at32f403a_407_dac.crf --depend .\objects\at32f403a_407_dac.d)
-I (.\include\at32f403a_407_conf.h)(0x633AC49D)
-F (.\firmware\at32f403a_407_debug.c)(0x633AC49D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\at32f403a_407_debug.o --omf_browse .\objects\at32f403a_407_debug.crf --depend .\objects\at32f403a_407_debug.d)
-I (.\include\at32f403a_407_conf.h)(0x633AC49D)
-F (.\firmware\at32f403a_407_dma.c)(0x633AC49D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\at32f403a_407_dma.o --omf_browse .\objects\at32f403a_407_dma.crf --depend .\objects\at32f403a_407_dma.d)
-I (.\include\at32f403a_407_conf.h)(0x633AC49D)
-F (.\firmware\at32f403a_407_emac.c)(0x633AC49D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\at32f403a_407_emac.o --omf_browse .\objects\at32f403a_407_emac.crf --depend .\objects\at32f403a_407_emac.d)
-I (.\include\at32f403a_407_conf.h)(0x633AC49D)
-F (.\firmware\at32f403a_407_exint.c)(0x633AC49D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\at32f403a_407_exint.o --omf_browse .\objects\at32f403a_407_exint.crf --depend .\objects\at32f403a_407_exint.d)
-I (.\include\at32f403a_407_conf.h)(0x633AC49D)
-F (.\firmware\at32f403a_407_flash.c)(0x633AC49D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\at32f403a_407_flash.o --omf_browse .\objects\at32f403a_407_flash.crf --depend .\objects\at32f403a_407_flash.d)
-I (.\include\at32f403a_407_conf.h)(0x633AC49D)
-F (.\firmware\at32f403a_407_gpio.c)(0x633AC49D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\at32f403a_407_gpio.o --omf_browse .\objects\at32f403a_407_gpio.crf --depend .\objects\at32f403a_407_gpio.d)
-I (.\include\at32f403a_407_conf.h)(0x633AC49D)
-F (.\firmware\at32f403a_407_i2c.c)(0x633AC49D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\at32f403a_407_i2c.o --omf_browse .\objects\at32f403a_407_i2c.crf --depend .\objects\at32f403a_407_i2c.d)
-I (.\include\at32f403a_407_conf.h)(0x633AC49D)
-F (.\firmware\at32f403a_407_misc.c)(0x633AC49D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\at32f403a_407_misc.o --omf_browse .\objects\at32f403a_407_misc.crf --depend .\objects\at32f403a_407_misc.d)
-I (.\include\at32f403a_407_conf.h)(0x633AC49D)
-F (.\firmware\at32f403a_407_pwc.c)(0x633AC49D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\at32f403a_407_pwc.o --omf_browse .\objects\at32f403a_407_pwc.crf --depend .\objects\at32f403a_407_pwc.d)
-I (.\include\at32f403a_407_conf.h)(0x633AC49D)
-F (.\firmware\at32f403a_407_rtc.c)(0x633AC49D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\at32f403a_407_rtc.o --omf_browse .\objects\at32f403a_407_rtc.crf --depend .\objects\at32f403a_407_rtc.d)
-I (.\include\at32f403a_407_conf.h)(0x633AC49D)
-F (.\firmware\at32f403a_407_sdio.c)(0x633AC49D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\at32f403a_407_sdio.o --omf_browse .\objects\at32f403a_407_sdio.crf --depend .\objects\at32f403a_407_sdio.d)
-I (.\include\at32f403a_407_conf.h)(0x633AC49D)
-F (.\firmware\at32f403a_407_spi.c)(0x633AC49D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\at32f403a_407_spi.o --omf_browse .\objects\at32f403a_407_spi.crf --depend .\objects\at32f403a_407_spi.d)
-I (.\include\at32f403a_407_conf.h)(0x633AC49D)
-F (.\firmware\at32f403a_407_tmr.c)(0x633AC49D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\at32f403a_407_tmr.o --omf_browse .\objects\at32f403a_407_tmr.crf --depend .\objects\at32f403a_407_tmr.d)
-I (.\include\at32f403a_407_conf.h)(0x633AC49D)
-F (.\firmware\at32f403a_407_usart.c)(0x633AC49D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\at32f403a_407_usart.o --omf_browse .\objects\at32f403a_407_usart.crf --depend .\objects\at32f403a_407_usart.d)
-I (.\include\at32f403a_407_conf.h)(0x633AC49D)
-F (.\firmware\at32f403a_407_usb.c)(0x633AC49D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\at32f403a_407_usb.o --omf_browse .\objects\at32f403a_407_usb.crf --depend .\objects\at32f403a_407_usb.d)
-I (.\include\at32f403a_407_conf.h)(0x633AC49D)
-F (.\firmware\at32f403a_407_wdt.c)(0x633AC49D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\at32f403a_407_wdt.o --omf_browse .\objects\at32f403a_407_wdt.crf --depend .\objects\at32f403a_407_wdt.d)
-I (.\include\at32f403a_407_conf.h)(0x633AC49D)
-F (.\firmware\at32f403a_407_wwdt.c)(0x633AC49D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\at32f403a_407_wwdt.o --omf_browse .\objects\at32f403a_407_wwdt.crf --depend .\objects\at32f403a_407_wwdt.d)
-I (.\include\at32f403a_407_conf.h)(0x633AC49D)
-F (.\firmware\at32f403a_407_xmc.c)(0x633AC49D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\at32f403a_407_xmc.o --omf_browse .\objects\at32f403a_407_xmc.crf --depend .\objects\at32f403a_407_xmc.d)
-I (.\include\at32f403a_407_conf.h)(0x633AC49D)
-F (.\include\at32f403a_407_board.h)(0x6358FE2A)()
-F (.\include\at32f403a_407_clock.h)(0x633AC49D)()
-F (.\include\at32f403a_407_conf.h)(0x633AC49D)()
-F (.\include\at32f403a_407_int.h)(0x633AC49D)()
-F (.\include\interrupts.h)(0x635A867A)()
-F (.\include\libraries\cmsis\cm4\core_support\arm_common_tables.h)(0x62FEFE5F)()
-F (.\include\libraries\cmsis\cm4\core_support\arm_const_structs.h)(0x62FEFE5F)()
-F (.\include\libraries\cmsis\cm4\core_support\arm_helium_utils.h)(0x62FEFE5F)()
-F (.\include\libraries\cmsis\cm4\core_support\arm_math.h)(0x62FEFE5F)()
-F (.\include\libraries\cmsis\cm4\core_support\arm_mve_tables.h)(0x62FEFE5F)()
-F (.\include\libraries\cmsis\cm4\core_support\arm_vec_math.h)(0x62FEFE5F)()
-F (.\include\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x62FEFE5F)()
-F (.\include\libraries\cmsis\cm4\core_support\cmsis_armclang.h)(0x62FEFE5F)()
-F (.\include\libraries\cmsis\cm4\core_support\cmsis_armclang_ltm.h)(0x62FEFE5F)()
-F (.\include\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x62FEFE5F)()
-F (.\include\libraries\cmsis\cm4\core_support\cmsis_gcc.h)(0x62FEFE5F)()
-F (.\include\libraries\cmsis\cm4\core_support\cmsis_iccarm.h)(0x62FEFE5F)()
-F (.\include\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x62FEFE5F)()
-F (.\include\libraries\cmsis\cm4\core_support\core_cm4.h)(0x62FEFE5F)()
-F (.\include\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x62FEFE5F)()
-F (.\include\libraries\cmsis\cm4\core_support\mpu_armv8.h)(0x62FEFE5F)()
-F (.\include\libraries\cmsis\cm4\core_support\pmu_armv8.h)(0x62FEFE5F)()
-F (.\include\libraries\cmsis\cm4\device_support\at32f403a_407.h)(0x62FEFEB7)()
-F (.\include\libraries\cmsis\cm4\device_support\at32f403a_407_conf_template.h)(0x62FEFEB9)()
-F (.\include\libraries\cmsis\cm4\device_support\system_at32f403a_407.h)(0x62FEFEBD)()
-F (.\include\libraries\drivers\inc\at32f403a_407_acc.h)(0x62FEFEC6)()
-F (.\include\libraries\drivers\inc\at32f403a_407_adc.h)(0x62FEFEC8)()
-F (.\include\libraries\drivers\inc\at32f403a_407_bpr.h)(0x62FEFEC9)()
-F (.\include\libraries\drivers\inc\at32f403a_407_can.h)(0x62FEFECB)()
-F (.\include\libraries\drivers\inc\at32f403a_407_crc.h)(0x62FEFECC)()
-F (.\include\libraries\drivers\inc\at32f403a_407_crm.h)(0x62FEFECE)()
-F (.\include\libraries\drivers\inc\at32f403a_407_dac.h)(0x62FEFECF)()
-F (.\include\libraries\drivers\inc\at32f403a_407_debug.h)(0x62FEFED1)()
-F (.\include\libraries\drivers\inc\at32f403a_407_def.h)(0x62FEFED2)()
-F (.\include\libraries\drivers\inc\at32f403a_407_dma.h)(0x62FEFED4)()
-F (.\include\libraries\drivers\inc\at32f403a_407_emac.h)(0x62FEFED5)()
-F (.\include\libraries\drivers\inc\at32f403a_407_exint.h)(0x62FEFED7)()
-F (.\include\libraries\drivers\inc\at32f403a_407_flash.h)(0x62FEFED8)()
-F (.\include\libraries\drivers\inc\at32f403a_407_gpio.h)(0x62FEFEDA)()
-F (.\include\libraries\drivers\inc\at32f403a_407_i2c.h)(0x62FEFEDB)()
-F (.\include\libraries\drivers\inc\at32f403a_407_misc.h)(0x62FEFEDD)()
-F (.\include\libraries\drivers\inc\at32f403a_407_pwc.h)(0x62FEFEDE)()
-F (.\include\libraries\drivers\inc\at32f403a_407_rtc.h)(0x62FEFEDF)()
-F (.\include\libraries\drivers\inc\at32f403a_407_sdio.h)(0x62FEFEE1)()
-F (.\include\libraries\drivers\inc\at32f403a_407_spi.h)(0x62FEFEE2)()
-F (.\include\libraries\drivers\inc\at32f403a_407_tmr.h)(0x62FEFEE4)()
-F (.\include\libraries\drivers\inc\at32f403a_407_usart.h)(0x62FEFEE5)()
-F (.\include\libraries\drivers\inc\at32f403a_407_usb.h)(0x62FEFEE7)()
-F (.\include\libraries\drivers\inc\at32f403a_407_wdt.h)(0x62FEFEE8)()
-F (.\include\libraries\drivers\inc\at32f403a_407_wwdt.h)(0x62FEFEEA)()
-F (.\include\libraries\drivers\inc\at32f403a_407_xmc.h)(0x62FEFEEB)()
-F (.\ldscripts\AT32F407xG_FLASH.ld)(0x633AC49D)()
-F (.\SVD\AT32F407xx_v2.svd)(0x633AC49D)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 525" --pd "AT32F407AVCT7 SETA 1"--list .\listings\at32f407xx_v2.lst --xref -o .\objects\at32f407xx_v2.o --depend .\objects\at32f407xx_v2.d)
-F (.\user\at32f403a_407_clock.c)(0x63410C10)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\at32f403a_407_clock.o --omf_browse .\objects\at32f403a_407_clock.crf --depend .\objects\at32f403a_407_clock.d)
-I (.\include\at32f403a_407_clock.h)(0x633AC49D)
-I (C:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include\at32f403a_407.h)(0x6246DA24)
-I (C:\Keil\ARM\CMSIS\Include\core_cm4.h)(0x559D31EA)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599F137E)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x559D31EA)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x559D31EA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D31EA)
-I (C:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include\system_at32f403a_407.h)(0x6246DA2E)
-F (.\user\at32f403a_407_int.c)(0x6358E9D7)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\at32f403a_407_int.o --omf_browse .\objects\at32f403a_407_int.crf --depend .\objects\at32f403a_407_int.d)
-I (.\include\at32f403a_407_int.h)(0x633AC49D)
-I (C:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include\at32f403a_407.h)(0x6246DA24)
-I (C:\Keil\ARM\CMSIS\Include\core_cm4.h)(0x559D31EA)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599F137E)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x559D31EA)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x559D31EA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D31EA)
-I (C:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include\system_at32f403a_407.h)(0x6246DA2E)
-F (.\user\can_interrupt.c)(0x635A6A6A)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\can_interrupt.o --omf_browse .\objects\can_interrupt.crf --depend .\objects\can_interrupt.d)
-I (.\include\interrupts.h)(0x635A867A)
-I (.\include\at32f403a_407_board.h)(0x6358FE2A)
-I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x599F137C)
-I (C:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include\at32f403a_407.h)(0x6246DA24)
-I (C:\Keil\ARM\CMSIS\Include\core_cm4.h)(0x559D31EA)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599F137E)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x559D31EA)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x559D31EA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D31EA)
-I (C:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include\system_at32f403a_407.h)(0x6246DA2E)
-F (.\user\main.c)(0x640A1E68)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (.\include\at32f403a_407_board.h)(0x6358FE2A)
-I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x599F137C)
-I (C:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include\at32f403a_407.h)(0x6246DA24)
-I (C:\Keil\ARM\CMSIS\Include\core_cm4.h)(0x559D31EA)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599F137E)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x559D31EA)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x559D31EA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D31EA)
-I (C:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include\system_at32f403a_407.h)(0x6246DA2E)
-F (.\user\spi_interrupts.c)(0x635A43FA)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\spi_interrupts.o --omf_browse .\objects\spi_interrupts.crf --depend .\objects\spi_interrupts.d)
-I (.\include\interrupts.h)(0x635A867A)
-I (.\include\at32f403a_407_board.h)(0x6358FE2A)
-I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x599F137C)
-I (C:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include\at32f403a_407.h)(0x6246DA24)
-I (C:\Keil\ARM\CMSIS\Include\core_cm4.h)(0x559D31EA)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599F137E)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x559D31EA)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x559D31EA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D31EA)
-I (C:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include\system_at32f403a_407.h)(0x6246DA2E)
-F (.\user\tmr_interrupt.c)(0x63624AE2)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\tmr_interrupt.o --omf_browse .\objects\tmr_interrupt.crf --depend .\objects\tmr_interrupt.d)
-I (.\include\interrupts.h)(0x635A867A)
-I (.\include\at32f403a_407_board.h)(0x6358FE2A)
-I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x599F137C)
-I (C:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include\at32f403a_407.h)(0x6246DA24)
-I (C:\Keil\ARM\CMSIS\Include\core_cm4.h)(0x559D31EA)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599F137E)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x559D31EA)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x559D31EA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D31EA)
-I (C:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include\system_at32f403a_407.h)(0x6246DA2E)
-F (.\user\usart_interrupts.c)(0x635A2EFD)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\bsp -I .\cmsis -I .\debug -I .\firmware -I .\include -I .\ldscripts -I .\Listings -I .\Objects -I .\SVD -I .\user-I.\RTE\_Measuring_circuit_AT32-IC:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAT32F407AVCT7-o .\objects\usart_interrupts.o --omf_browse .\objects\usart_interrupts.crf --depend .\objects\usart_interrupts.d)
-I (.\include\interrupts.h)(0x635A867A)
-I (.\include\at32f403a_407_board.h)(0x6358FE2A)
-I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x599F137C)
-I (C:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include\at32f403a_407.h)(0x6246DA24)
-I (C:\Keil\ARM\CMSIS\Include\core_cm4.h)(0x559D31EA)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599F137E)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x559D31EA)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x559D31EA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D31EA)
-I (C:\Keil\ARM\PACK\ArteryTek\AT32F403A_407_DFP\2.0.8\Device\Include\system_at32f403a_407.h)(0x6246DA2E)
