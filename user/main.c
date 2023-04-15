@@ -1,7 +1,7 @@
 #include "at32f403a_407_board.h"
 #include "at32f403a_407_clock.h"
 #include "interrupts.h"
-#include "math.h"
+#include "stdbool.h"
 
 uint16_t mux_enable[5] = {GPIO_PINS_7, GPIO_PINS_8, GPIO_PINS_9, GPIO_PINS_10, GPIO_PINS_11};
 uint16_t mux_address[3] = {GPIO_PINS_4, GPIO_PINS_5, GPIO_PINS_6};
@@ -26,11 +26,11 @@ void set_gpio(uint16_t pin, bool state)
 {
 	if (state)
 	{
-		gpio_bit_set(GPIOD, pin);
+		gpio_bits_set(GPIOD, pin);
 	}
 	else
 	{
-		gpio_bit_reset(GPIOD, pin);
+		gpio_bits_reset(GPIOD, pin);
 	}
 }
 
@@ -39,14 +39,15 @@ void iterating_over_MUX(void)
 {
 	for (int i = 0; i < 5; ++i)
 	{
-		gpio_bit_set(GPIOD, mux_enable[i]);
+		gpio_bits_set(GPIOD, mux_enable[i]);
 		for (int j = 0; j < 8; ++j)
 		{
 			set_gpio(mux_address[0], j & 1);
 			set_gpio(mux_address[1], j & 2);
 			set_gpio(mux_address[2], j & 4);
+			delay_ms(100);
 		}
-		gpio_bit_reset(GPIOD, mux_enable[i]);
+		gpio_bits_reset(GPIOD, mux_enable[i]);
 	}
 }
 
@@ -79,11 +80,36 @@ void MUX_manage(void)
 }
 
 
-void adc_init_structure(void)
+void dma_configuration(void)
+{
+	dma_init_type dma_init_struct;
+	crm_periph_clock_enable(CRM_DMA1_PERIPH_CLOCK, TRUE);
+	dma_reset(DMA1_CHANNEL1);
+	dma_default_para_init(&dma_init_struct);
+	dma_init_struct.buffer_size = 1;
+	dma_init_struct.direction = DMA_DIR_PERIPHERAL_TO_MEMORY;
+	dma_init_struct.loop_mode_enable = TRUE;
+	dma_init_struct.
+
+}
+
+
+// ADCCLK must be less than 28 MHz
+void adc_configuration(void)
 {
 	adc_base_config_type adc_base_struct;
-	adc_base_default_para_init(&adc_base_struct);
+	crm_periph_clock_enable(CRM_ADC1_PERIPH_CLOCK, TRUE);
+	crm_adc_clock_div_set(CRM_ADC_DIV_6);
+	adc_combine_mode_select(ADC_INDEPENDENT_MODE);
 
+	adc_base_default_para_init(&adc_base_struct);
+	adc_base_struct.data_align = ADC_RIGHT_ALIGNMENT;
+	adc_base_struct.sequence_mode = FALSE;
+	adc_base_struct.repeat_mode = FALSE;
+	adc_base_struct.ordinary_channel_length = 1;
+	adc_base_config(ADC1, &adc_base_struct);
+	adc_ordinary_channel_set(ADC1, ADC_CHANNEL_1, 1, ADC_SAMPLETIME_239_5);
+	adc_ordinary_conversion_trigger_set(ADC1, ADC12_);
 
 }
 

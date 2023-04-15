@@ -95,7 +95,6 @@ Discarded input sections
  .data          0x00000000        0x0 ./user/at32f403a_407_int.o
  .bss           0x00000000        0x0 ./user/at32f403a_407_int.o
  .text          0x00000000        0x0 ./user/main.o
- .data          0x00000000        0x0 ./user/main.o
  .bss           0x00000000        0x0 ./user/main.o
  .text.adc_init_structure
                 0x00000000       0x16 ./user/main.o
@@ -1632,6 +1631,7 @@ Discarded input sections
  .rodata        0x00000000       0x10 ./cmsis/system_at32f403a_407.o
  .text          0x00000000        0x0 ./bsp/at32f403a_407_board.o
  .data          0x00000000       0x21 ./bsp/at32f403a_407_board.o
+ .bss           0x00000000        0x8 ./bsp/at32f403a_407_board.o
  .text.__io_putchar
                 0x00000000       0x34 ./bsp/at32f403a_407_board.o
  .text._write   0x00000000       0x38 ./bsp/at32f403a_407_board.o
@@ -1657,8 +1657,21 @@ Discarded input sections
                 0x00000000       0x40 ./bsp/at32f403a_407_board.o
  .text.delay_us
                 0x00000000       0x6c ./bsp/at32f403a_407_board.o
+ .text.delay_ms
+                0x00000000       0x98 ./bsp/at32f403a_407_board.o
  .text.delay_sec
                 0x00000000       0x38 ./bsp/at32f403a_407_board.o
+ .debug_info    0x00000000     0x226b ./bsp/at32f403a_407_board.o
+ .debug_abbrev  0x00000000      0x3f1 ./bsp/at32f403a_407_board.o
+ .debug_aranges
+                0x00000000       0x90 ./bsp/at32f403a_407_board.o
+ .debug_ranges  0x00000000       0x80 ./bsp/at32f403a_407_board.o
+ .debug_line    0x00000000      0x62b ./bsp/at32f403a_407_board.o
+ .debug_str     0x00000000     0x148e ./bsp/at32f403a_407_board.o
+ .comment       0x00000000       0x4a ./bsp/at32f403a_407_board.o
+ .debug_frame   0x00000000      0x220 ./bsp/at32f403a_407_board.o
+ .ARM.attributes
+                0x00000000       0x34 ./bsp/at32f403a_407_board.o
  .text          0x00000000        0x0 d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-exit.o)
  .data          0x00000000        0x0 d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-exit.o)
  .bss           0x00000000        0x0 d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-exit.o)
@@ -2065,7 +2078,7 @@ LOAD d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../li
                 0x08000000                g_pfnVectors
                 0x08000184                . = ALIGN (0x4)
 
-.text           0x08000184      0x6dc
+.text           0x08000184      0x5e8
                 0x08000184                . = ALIGN (0x4)
  *(.text)
  .text          0x08000184       0x40 d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
@@ -2101,226 +2114,225 @@ LOAD d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../li
  .text.port_init_output
                 0x08000224       0x54 ./user/main.o
                 0x08000224                port_init_output
- .text.iterating_through_address_ports
-                0x08000278       0xa8 ./user/main.o
-                0x08000278                iterating_through_address_ports
+ .text.set_gpio
+                0x08000278       0x38 ./user/main.o
+                0x08000278                set_gpio
  .text.iterating_over_MUX
-                0x08000320       0xa0 ./user/main.o
-                0x08000320                iterating_over_MUX
+                0x080002b0       0xb4 ./user/main.o
+                0x080002b0                iterating_over_MUX
  .text.MUX_manage
-                0x080003c0       0x68 ./user/main.o
-                0x080003c0                MUX_manage
- .text.main     0x08000428        0xa ./user/main.o
-                0x08000428                main
+                0x08000364       0x68 ./user/main.o
+                0x08000364                MUX_manage
+ .text.main     0x080003cc        0xa ./user/main.o
+                0x080003cc                main
  .text.crm_periph_clock_enable
-                0x08000432       0x7c ./firmware/at32f403a_407_crm.o
-                0x08000432                crm_periph_clock_enable
+                0x080003d6       0x7c ./firmware/at32f403a_407_crm.o
+                0x080003d6                crm_periph_clock_enable
  .text.gpio_init
-                0x080004ae      0x138 ./firmware/at32f403a_407_gpio.o
-                0x080004ae                gpio_init
+                0x08000452      0x138 ./firmware/at32f403a_407_gpio.o
+                0x08000452                gpio_init
  .text.gpio_default_para_init
-                0x080005e6       0x34 ./firmware/at32f403a_407_gpio.o
-                0x080005e6                gpio_default_para_init
+                0x0800058a       0x34 ./firmware/at32f403a_407_gpio.o
+                0x0800058a                gpio_default_para_init
  .text.gpio_bits_set
-                0x0800061a       0x1e ./firmware/at32f403a_407_gpio.o
-                0x0800061a                gpio_bits_set
+                0x080005be       0x1e ./firmware/at32f403a_407_gpio.o
+                0x080005be                gpio_bits_set
  .text.gpio_bits_reset
-                0x08000638       0x1e ./firmware/at32f403a_407_gpio.o
-                0x08000638                gpio_bits_reset
+                0x080005dc       0x1e ./firmware/at32f403a_407_gpio.o
+                0x080005dc                gpio_bits_reset
  .text.gpio_pins_huge_driven_config
-                0x08000656       0x3e ./firmware/at32f403a_407_gpio.o
-                0x08000656                gpio_pins_huge_driven_config
+                0x080005fa       0x3e ./firmware/at32f403a_407_gpio.o
+                0x080005fa                gpio_pins_huge_driven_config
  .text.Reset_Handler
-                0x08000694       0x48 ./cmsis/startup_at32f403a_407.o
-                0x08000694                Reset_Handler
+                0x08000638       0x48 ./cmsis/startup_at32f403a_407.o
+                0x08000638                Reset_Handler
  .text.Default_Handler
-                0x080006dc        0x2 ./cmsis/startup_at32f403a_407.o
-                0x080006dc                SDIO1_IRQHandler
-                0x080006dc                XMC_IRQHandler
-                0x080006dc                EXINT2_IRQHandler
-                0x080006dc                USBFS_L_CAN1_RX0_IRQHandler
-                0x080006dc                UART8_IRQHandler
-                0x080006dc                SPI4_IRQHandler
-                0x080006dc                I2C2_EVT_IRQHandler
-                0x080006dc                TMR1_OVF_TMR10_IRQHandler
-                0x080006dc                TMR8_TRG_HALL_TMR14_IRQHandler
-                0x080006dc                USBFS_H_CAN1_TX_IRQHandler
-                0x080006dc                I2C1_ERR_IRQHandler
-                0x080006dc                EXINT9_5_IRQHandler
-                0x080006dc                EMAC_IRQHandler
-                0x080006dc                CAN2_RX1_IRQHandler
-                0x080006dc                TMR5_GLOBAL_IRQHandler
-                0x080006dc                SDIO2_IRQHandler
-                0x080006dc                ADC1_2_IRQHandler
-                0x080006dc                SPI1_IRQHandler
-                0x080006dc                TAMPER_IRQHandler
-                0x080006dc                CAN2_RX0_IRQHandler
-                0x080006dc                DMA2_Channel2_IRQHandler
-                0x080006dc                DMA1_Channel4_IRQHandler
-                0x080006dc                TMR8_CH_IRQHandler
-                0x080006dc                USART6_IRQHandler
-                0x080006dc                EXINT0_IRQHandler
-                0x080006dc                USART3_IRQHandler
-                0x080006dc                RTC_IRQHandler
-                0x080006dc                DMA1_Channel7_IRQHandler
-                0x080006dc                CAN1_RX1_IRQHandler
-                0x080006dc                UART5_IRQHandler
-                0x080006dc                ADC3_IRQHandler
-                0x080006dc                ACC_IRQHandler
-                0x080006dc                EMAC_WKUP_IRQHandler
-                0x080006dc                DMA2_Channel1_IRQHandler
-                0x080006dc                EXINT3_IRQHandler
-                0x080006dc                DMA1_Channel6_IRQHandler
-                0x080006dc                UART4_IRQHandler
-                0x080006dc                DMA1_Channel1_IRQHandler
-                0x080006dc                Default_Handler
-                0x080006dc                USBFS_MAPH_IRQHandler
-                0x080006dc                TMR3_GLOBAL_IRQHandler
-                0x080006dc                TMR7_GLOBAL_IRQHandler
-                0x080006dc                CAN1_SE_IRQHandler
-                0x080006dc                CAN2_TX_IRQHandler
-                0x080006dc                I2C3_ERR_IRQHandler
-                0x080006dc                SPI3_I2S3EXT_IRQHandler
-                0x080006dc                TMR1_BRK_TMR9_IRQHandler
-                0x080006dc                USBFS_MAPL_IRQHandler
-                0x080006dc                TMR8_BRK_TMR12_IRQHandler
-                0x080006dc                TMR1_TRG_HALL_TMR11_IRQHandler
-                0x080006dc                DMA1_Channel5_IRQHandler
-                0x080006dc                TMR4_GLOBAL_IRQHandler
-                0x080006dc                EXINT4_IRQHandler
-                0x080006dc                CAN2_SE_IRQHandler
-                0x080006dc                DMA2_Channel6_7_IRQHandler
-                0x080006dc                PVM_IRQHandler
-                0x080006dc                I2C3_EVT_IRQHandler
-                0x080006dc                DMA1_Channel3_IRQHandler
-                0x080006dc                I2C1_EVT_IRQHandler
-                0x080006dc                TMR8_OVF_TMR13_IRQHandler
-                0x080006dc                TMR6_GLOBAL_IRQHandler
-                0x080006dc                EXINT1_IRQHandler
-                0x080006dc                RTCAlarm_IRQHandler
-                0x080006dc                DMA2_Channel4_5_IRQHandler
-                0x080006dc                UART7_IRQHandler
-                0x080006dc                USART2_IRQHandler
-                0x080006dc                DMA1_Channel2_IRQHandler
-                0x080006dc                TMR2_GLOBAL_IRQHandler
-                0x080006dc                FLASH_IRQHandler
-                0x080006dc                SPI2_I2S2EXT_IRQHandler
-                0x080006dc                I2C2_ERR_IRQHandler
-                0x080006dc                USBFSWakeUp_IRQHandler
-                0x080006dc                USART1_IRQHandler
-                0x080006dc                TMR1_CH_IRQHandler
-                0x080006dc                CRM_IRQHandler
-                0x080006dc                EXINT15_10_IRQHandler
-                0x080006dc                WWDT_IRQHandler
-                0x080006dc                DMA2_Channel3_IRQHandler
- *fill*         0x080006de        0x2 
+                0x08000680        0x2 ./cmsis/startup_at32f403a_407.o
+                0x08000680                SDIO1_IRQHandler
+                0x08000680                XMC_IRQHandler
+                0x08000680                EXINT2_IRQHandler
+                0x08000680                USBFS_L_CAN1_RX0_IRQHandler
+                0x08000680                UART8_IRQHandler
+                0x08000680                SPI4_IRQHandler
+                0x08000680                I2C2_EVT_IRQHandler
+                0x08000680                TMR1_OVF_TMR10_IRQHandler
+                0x08000680                TMR8_TRG_HALL_TMR14_IRQHandler
+                0x08000680                USBFS_H_CAN1_TX_IRQHandler
+                0x08000680                I2C1_ERR_IRQHandler
+                0x08000680                EXINT9_5_IRQHandler
+                0x08000680                EMAC_IRQHandler
+                0x08000680                CAN2_RX1_IRQHandler
+                0x08000680                TMR5_GLOBAL_IRQHandler
+                0x08000680                SDIO2_IRQHandler
+                0x08000680                ADC1_2_IRQHandler
+                0x08000680                SPI1_IRQHandler
+                0x08000680                TAMPER_IRQHandler
+                0x08000680                CAN2_RX0_IRQHandler
+                0x08000680                DMA2_Channel2_IRQHandler
+                0x08000680                DMA1_Channel4_IRQHandler
+                0x08000680                TMR8_CH_IRQHandler
+                0x08000680                USART6_IRQHandler
+                0x08000680                EXINT0_IRQHandler
+                0x08000680                USART3_IRQHandler
+                0x08000680                RTC_IRQHandler
+                0x08000680                DMA1_Channel7_IRQHandler
+                0x08000680                CAN1_RX1_IRQHandler
+                0x08000680                UART5_IRQHandler
+                0x08000680                ADC3_IRQHandler
+                0x08000680                ACC_IRQHandler
+                0x08000680                EMAC_WKUP_IRQHandler
+                0x08000680                DMA2_Channel1_IRQHandler
+                0x08000680                EXINT3_IRQHandler
+                0x08000680                DMA1_Channel6_IRQHandler
+                0x08000680                UART4_IRQHandler
+                0x08000680                DMA1_Channel1_IRQHandler
+                0x08000680                Default_Handler
+                0x08000680                USBFS_MAPH_IRQHandler
+                0x08000680                TMR3_GLOBAL_IRQHandler
+                0x08000680                TMR7_GLOBAL_IRQHandler
+                0x08000680                CAN1_SE_IRQHandler
+                0x08000680                CAN2_TX_IRQHandler
+                0x08000680                I2C3_ERR_IRQHandler
+                0x08000680                SPI3_I2S3EXT_IRQHandler
+                0x08000680                TMR1_BRK_TMR9_IRQHandler
+                0x08000680                USBFS_MAPL_IRQHandler
+                0x08000680                TMR8_BRK_TMR12_IRQHandler
+                0x08000680                TMR1_TRG_HALL_TMR11_IRQHandler
+                0x08000680                DMA1_Channel5_IRQHandler
+                0x08000680                TMR4_GLOBAL_IRQHandler
+                0x08000680                EXINT4_IRQHandler
+                0x08000680                CAN2_SE_IRQHandler
+                0x08000680                DMA2_Channel6_7_IRQHandler
+                0x08000680                PVM_IRQHandler
+                0x08000680                I2C3_EVT_IRQHandler
+                0x08000680                DMA1_Channel3_IRQHandler
+                0x08000680                I2C1_EVT_IRQHandler
+                0x08000680                TMR8_OVF_TMR13_IRQHandler
+                0x08000680                TMR6_GLOBAL_IRQHandler
+                0x08000680                EXINT1_IRQHandler
+                0x08000680                RTCAlarm_IRQHandler
+                0x08000680                DMA2_Channel4_5_IRQHandler
+                0x08000680                UART7_IRQHandler
+                0x08000680                USART2_IRQHandler
+                0x08000680                DMA1_Channel2_IRQHandler
+                0x08000680                TMR2_GLOBAL_IRQHandler
+                0x08000680                FLASH_IRQHandler
+                0x08000680                SPI2_I2S2EXT_IRQHandler
+                0x08000680                I2C2_ERR_IRQHandler
+                0x08000680                USBFSWakeUp_IRQHandler
+                0x08000680                USART1_IRQHandler
+                0x08000680                TMR1_CH_IRQHandler
+                0x08000680                CRM_IRQHandler
+                0x08000680                EXINT15_10_IRQHandler
+                0x08000680                WWDT_IRQHandler
+                0x08000680                DMA2_Channel3_IRQHandler
+ *fill*         0x08000682        0x2 
  .text.SystemInit
-                0x080006e0       0x88 ./cmsis/system_at32f403a_407.o
-                0x080006e0                SystemInit
- .text.delay_ms
-                0x08000768       0x98 ./bsp/at32f403a_407_board.o
-                0x08000768                delay_ms
+                0x08000684       0x88 ./cmsis/system_at32f403a_407.o
+                0x08000684                SystemInit
  .text.__libc_init_array
-                0x08000800       0x48 d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-init.o)
-                0x08000800                __libc_init_array
+                0x0800070c       0x48 d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-init.o)
+                0x0800070c                __libc_init_array
  *(.glue_7)
- .glue_7        0x08000848        0x0 linker stubs
+ .glue_7        0x08000754        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08000848        0x0 linker stubs
+ .glue_7t       0x08000754        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08000848        0x0 d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .eh_frame      0x08000754        0x0 d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.init)
- .init          0x08000848        0x4 d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x08000848                _init
- .init          0x0800084c        0x8 d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x08000754        0x4 d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x08000754                _init
+ .init          0x08000758        0x8 d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
  *(.fini)
- .fini          0x08000854        0x4 d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x08000854                _fini
- .fini          0x08000858        0x8 d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
-                0x08000860                . = ALIGN (0x4)
-                0x08000860                _etext = .
+ .fini          0x08000760        0x4 d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x08000760                _fini
+ .fini          0x08000764        0x8 d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x0800076c                . = ALIGN (0x4)
+                0x0800076c                _etext = .
 
-.vfp11_veneer   0x08000860        0x0
- .vfp11_veneer  0x08000860        0x0 linker stubs
+.vfp11_veneer   0x0800076c        0x0
+ .vfp11_veneer  0x0800076c        0x0 linker stubs
 
-.v4_bx          0x08000860        0x0
- .v4_bx         0x08000860        0x0 linker stubs
+.v4_bx          0x0800076c        0x0
+ .v4_bx         0x0800076c        0x0 linker stubs
 
-.iplt           0x08000860        0x0
- .iplt          0x08000860        0x0 d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.iplt           0x0800076c        0x0
+ .iplt          0x0800076c        0x0 d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rel.dyn        0x08000860        0x0
- .rel.iplt      0x08000860        0x0 d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.rel.dyn        0x0800076c        0x0
+ .rel.iplt      0x0800076c        0x0 d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rodata         0x08000860        0x0
-                0x08000860                . = ALIGN (0x4)
+.rodata         0x0800076c        0x0
+                0x0800076c                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
-                0x08000860                . = ALIGN (0x4)
+                0x0800076c                . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x08000860        0x0
-                0x08000860                __exidx_start = .
+.ARM            0x0800076c        0x0
+                0x0800076c                __exidx_start = .
  *(.ARM.exidx*)
-                0x08000860                __exidx_end = .
+                0x0800076c                __exidx_end = .
 
-.preinit_array  0x08000860        0x0
-                0x08000860                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0800076c        0x0
+                0x0800076c                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08000860                PROVIDE (__preinit_array_end = .)
+                0x0800076c                PROVIDE (__preinit_array_end = .)
 
-.init_array     0x08000860        0x4
-                0x08000860                PROVIDE (__init_array_start = .)
+.init_array     0x0800076c        0x4
+                0x0800076c                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x08000860        0x4 d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
-                0x08000864                PROVIDE (__init_array_end = .)
+ .init_array    0x0800076c        0x4 d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x08000770                PROVIDE (__init_array_end = .)
 
-.fini_array     0x08000864        0x4
+.fini_array     0x08000770        0x4
                 [!provide]                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08000864        0x4 d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .fini_array    0x08000770        0x4 d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 [!provide]                PROVIDE (__fini_array_end = .)
-                0x08000868                _sidata = LOADADDR (.data)
+                0x08000774                _sidata = LOADADDR (.data)
 
-.data           0x20000000        0x0 load address 0x08000868
+.data           0x20000000       0x14 load address 0x08000774
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
+ .data          0x20000000       0x12 ./user/main.o
+                0x20000000                mux_enable
+                0x2000000c                mux_address
  *(.data*)
-                0x20000000                . = ALIGN (0x4)
-                0x20000000                _edata = .
+                0x20000014                . = ALIGN (0x4)
+ *fill*         0x20000012        0x2 
+                0x20000014                _edata = .
 
-.igot.plt       0x20000000        0x0 load address 0x08000868
- .igot.plt      0x20000000        0x0 d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
-                0x20000000                . = ALIGN (0x4)
+.igot.plt       0x20000014        0x0 load address 0x08000788
+ .igot.plt      0x20000014        0x0 d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x20000014                . = ALIGN (0x4)
 
-.bss            0x20000000       0x24 load address 0x08000868
-                0x20000000                _sbss = .
-                0x20000000                __bss_start__ = _sbss
+.bss            0x20000014       0x1c load address 0x08000788
+                0x20000014                _sbss = .
+                0x20000014                __bss_start__ = _sbss
  *(.bss)
- .bss           0x20000000       0x1c d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
- .bss           0x2000001c        0x8 ./bsp/at32f403a_407_board.o
+ .bss           0x20000014       0x1c d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.bss*)
  *(COMMON)
-                0x20000024                . = ALIGN (0x4)
-                0x20000024                _ebss = .
-                0x20000024                __bss_end__ = _ebss
+                0x20000030                . = ALIGN (0x4)
+                0x20000030                _ebss = .
+                0x20000030                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20000024      0x604 load address 0x08000868
-                0x20000028                . = ALIGN (0x8)
- *fill*         0x20000024        0x4 
-                0x20000028                PROVIDE (end = .)
+                0x20000030      0x600 load address 0x08000788
+                0x20000030                . = ALIGN (0x8)
+                0x20000030                PROVIDE (end = .)
                 [!provide]                PROVIDE (_end = .)
-                0x20000228                . = (. + _Min_Heap_Size)
- *fill*         0x20000028      0x200 
-                0x20000628                . = (. + _Min_Stack_Size)
- *fill*         0x20000228      0x400 
-                0x20000628                . = ALIGN (0x8)
+                0x20000230                . = (. + _Min_Heap_Size)
+ *fill*         0x20000030      0x200 
+                0x20000630                . = (. + _Min_Stack_Size)
+ *fill*         0x20000230      0x400 
+                0x20000630                . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -2347,36 +2359,32 @@ LOAD d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../li
  .ARM.attributes
                 0x00000143       0x34 ./cmsis/system_at32f403a_407.o
  .ARM.attributes
-                0x00000177       0x34 ./bsp/at32f403a_407_board.o
+                0x00000177       0x34 d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-init.o)
  .ARM.attributes
-                0x000001ab       0x34 d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-init.o)
- .ARM.attributes
-                0x000001df       0x1e d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x000001ab       0x1e d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
 OUTPUT(Measuring_circuit_AT32.elf elf32-littlearm)
 LOAD linker stubs
 LOAD d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a
 LOAD d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a
 LOAD d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a
 
-.debug_info     0x00000000     0x8e42
+.debug_info     0x00000000     0x6d0e
  .debug_info    0x00000000      0x10e ./user/at32f403a_407_int.o
- .debug_info    0x0000010e     0x10d2 ./user/main.o
- .debug_info    0x000011e0     0x2465 ./firmware/at32f403a_407_crm.o
- .debug_info    0x00003645     0x1f29 ./firmware/at32f403a_407_gpio.o
- .debug_info    0x0000556e       0x22 ./cmsis/startup_at32f403a_407.o
- .debug_info    0x00005590     0x1647 ./cmsis/system_at32f403a_407.o
- .debug_info    0x00006bd7     0x226b ./bsp/at32f403a_407_board.o
+ .debug_info    0x0000010e     0x1209 ./user/main.o
+ .debug_info    0x00001317     0x2465 ./firmware/at32f403a_407_crm.o
+ .debug_info    0x0000377c     0x1f29 ./firmware/at32f403a_407_gpio.o
+ .debug_info    0x000056a5       0x22 ./cmsis/startup_at32f403a_407.o
+ .debug_info    0x000056c7     0x1647 ./cmsis/system_at32f403a_407.o
 
-.debug_abbrev   0x00000000      0xbaf
+.debug_abbrev   0x00000000      0x80d
  .debug_abbrev  0x00000000       0x44 ./user/at32f403a_407_int.o
- .debug_abbrev  0x00000044      0x1a3 ./user/main.o
- .debug_abbrev  0x000001e7      0x229 ./firmware/at32f403a_407_crm.o
- .debug_abbrev  0x00000410      0x215 ./firmware/at32f403a_407_gpio.o
- .debug_abbrev  0x00000625       0x12 ./cmsis/startup_at32f403a_407.o
- .debug_abbrev  0x00000637      0x187 ./cmsis/system_at32f403a_407.o
- .debug_abbrev  0x000007be      0x3f1 ./bsp/at32f403a_407_board.o
+ .debug_abbrev  0x00000044      0x1f2 ./user/main.o
+ .debug_abbrev  0x00000236      0x229 ./firmware/at32f403a_407_crm.o
+ .debug_abbrev  0x0000045f      0x215 ./firmware/at32f403a_407_gpio.o
+ .debug_abbrev  0x00000674       0x12 ./cmsis/startup_at32f403a_407.o
+ .debug_abbrev  0x00000686      0x187 ./cmsis/system_at32f403a_407.o
 
-.debug_aranges  0x00000000      0x368
+.debug_aranges  0x00000000      0x2d8
  .debug_aranges
                 0x00000000       0x60 ./user/at32f403a_407_int.o
  .debug_aranges
@@ -2389,42 +2397,36 @@ LOAD d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../li
                 0x00000288       0x28 ./cmsis/startup_at32f403a_407.o
  .debug_aranges
                 0x000002b0       0x28 ./cmsis/system_at32f403a_407.o
- .debug_aranges
-                0x000002d8       0x90 ./bsp/at32f403a_407_board.o
 
-.debug_ranges   0x00000000      0x300
+.debug_ranges   0x00000000      0x280
  .debug_ranges  0x00000000       0x50 ./user/at32f403a_407_int.o
  .debug_ranges  0x00000050       0x38 ./user/main.o
  .debug_ranges  0x00000088      0x128 ./firmware/at32f403a_407_crm.o
  .debug_ranges  0x000001b0       0x98 ./firmware/at32f403a_407_gpio.o
  .debug_ranges  0x00000248       0x20 ./cmsis/startup_at32f403a_407.o
  .debug_ranges  0x00000268       0x18 ./cmsis/system_at32f403a_407.o
- .debug_ranges  0x00000280       0x80 ./bsp/at32f403a_407_board.o
 
-.debug_line     0x00000000     0x1b55
+.debug_line     0x00000000     0x1590
  .debug_line    0x00000000       0xfc ./user/at32f403a_407_int.o
- .debug_line    0x000000fc      0x287 ./user/main.o
- .debug_line    0x00000383      0x84d ./firmware/at32f403a_407_crm.o
- .debug_line    0x00000bd0      0x593 ./firmware/at32f403a_407_gpio.o
- .debug_line    0x00001163       0x7c ./cmsis/startup_at32f403a_407.o
- .debug_line    0x000011df      0x34b ./cmsis/system_at32f403a_407.o
- .debug_line    0x0000152a      0x62b ./bsp/at32f403a_407_board.o
+ .debug_line    0x000000fc      0x2ed ./user/main.o
+ .debug_line    0x000003e9      0x84d ./firmware/at32f403a_407_crm.o
+ .debug_line    0x00000c36      0x593 ./firmware/at32f403a_407_gpio.o
+ .debug_line    0x000011c9       0x7c ./cmsis/startup_at32f403a_407.o
+ .debug_line    0x00001245      0x34b ./cmsis/system_at32f403a_407.o
 
-.debug_str      0x00000000     0x3a8e
+.debug_str      0x00000000     0x3399
  .debug_str     0x00000000      0x1c3 ./user/at32f403a_407_int.o
                                 0x1f7 (size before relaxing)
- .debug_str     0x000001c3      0xb1b ./user/main.o
-                                0xc7c (size before relaxing)
- .debug_str     0x00000cde     0x1b9c ./firmware/at32f403a_407_crm.o
+ .debug_str     0x000001c3      0xcb4 ./user/main.o
+                                0xe24 (size before relaxing)
+ .debug_str     0x00000e77     0x1b91 ./firmware/at32f403a_407_crm.o
                                0x2260 (size before relaxing)
- .debug_str     0x0000287a      0x89c ./firmware/at32f403a_407_gpio.o
+ .debug_str     0x00002a08      0x89c ./firmware/at32f403a_407_gpio.o
                                0x13b9 (size before relaxing)
- .debug_str     0x00003116       0x2f ./cmsis/startup_at32f403a_407.o
+ .debug_str     0x000032a4       0x2f ./cmsis/startup_at32f403a_407.o
                                  0x62 (size before relaxing)
- .debug_str     0x00003145      0x24e ./cmsis/system_at32f403a_407.o
+ .debug_str     0x000032d3       0xc6 ./cmsis/system_at32f403a_407.o
                                 0xb45 (size before relaxing)
- .debug_str     0x00003393      0x6fb ./bsp/at32f403a_407_board.o
-                               0x148e (size before relaxing)
 
 .comment        0x00000000       0x49
  .comment       0x00000000       0x49 ./user/at32f403a_407_int.o
@@ -2433,16 +2435,14 @@ LOAD d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../li
  .comment       0x00000049       0x4a ./firmware/at32f403a_407_crm.o
  .comment       0x00000049       0x4a ./firmware/at32f403a_407_gpio.o
  .comment       0x00000049       0x4a ./cmsis/system_at32f403a_407.o
- .comment       0x00000049       0x4a ./bsp/at32f403a_407_board.o
 
-.debug_frame    0x00000000      0xcd8
+.debug_frame    0x00000000      0xac8
  .debug_frame   0x00000000      0x110 ./user/at32f403a_407_int.o
- .debug_frame   0x00000110       0xc8 ./user/main.o
- .debug_frame   0x000001d8      0x590 ./firmware/at32f403a_407_crm.o
- .debug_frame   0x00000768      0x2d0 ./firmware/at32f403a_407_gpio.o
- .debug_frame   0x00000a38       0x54 ./cmsis/system_at32f403a_407.o
- .debug_frame   0x00000a8c      0x220 ./bsp/at32f403a_407_board.o
- .debug_frame   0x00000cac       0x2c d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-init.o)
+ .debug_frame   0x00000110       0xd8 ./user/main.o
+ .debug_frame   0x000001e8      0x590 ./firmware/at32f403a_407_crm.o
+ .debug_frame   0x00000778      0x2d0 ./firmware/at32f403a_407_gpio.o
+ .debug_frame   0x00000a48       0x54 ./cmsis/system_at32f403a_407.o
+ .debug_frame   0x00000a9c       0x2c d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-init.o)
 
 .stabstr        0x00000000      0x117
  .stabstr       0x00000000      0x117 d:/programs/at32ide/platform/tools/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(close.o)
