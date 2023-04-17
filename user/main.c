@@ -3,8 +3,62 @@
 #include "interrupts.h"
 #include "stdbool.h"
 
+
+
 uint16_t mux_enable[5] = {GPIO_PINS_7, GPIO_PINS_8, GPIO_PINS_9, GPIO_PINS_10, GPIO_PINS_11};
 uint16_t mux_address[3] = {GPIO_PINS_4, GPIO_PINS_5, GPIO_PINS_6};
+
+int clock_init (void)
+{
+	__IO int start_up_counter;
+
+	CRM->cfg |= (0 << 4) //Установка предделителя для шины AHB
+			 | (4 << 8)  //Установка предделителя для шины APB1
+			 | (4 << 11); //Установка предделителя для шины APB2
+
+	CRM->ctrl |= (1 << 16); //Запускаю кварцевый генератор
+
+	for(start_up_counter = 0; ; start_up_counter++) //Ожидание запуска или окончания периода ожидания
+	{
+		if(CRM->ctrl & (1 << 17)) //Проверка аппаратной установки бита, после включения кварца
+			break;
+
+		if(start_up_counter > 0x1000) //Если запуск не произошёл, то отключаю всё, что влючал
+		{
+			CRM->ctrl &= ~(1 << 16);
+			return 1;
+		}
+	}
+
+	CRM->cfg |= (1 << 29) // Устанавливаю множитель PLL (= 30)
+			 | (13 << 18);
+
+	CRM->cfg |= (1 << 16); // Включаю тактирование PLL от HEXT
+
+	CRM->ctrl |= (1 << 24); // Включаю PLL
+
+	for(start_up_counter = 0; ; start_up_counter++)
+	{
+		if(CRM->ctrl & (1 << 25)) // Проверка аппаратной установки бита, после включения PLL
+			break;
+
+		if(start_up_counter > 0x1000) //Если запуск не произошёл, то отключаю всё, что влючал
+		{
+			CRM->ctrl &= ~(1 << 16);
+			CRM->ctrl &= ~(1 << 24);
+			return 2;
+		}
+	}
+
+	CRM->cfg |= (2 << 0); //Переключение на работу от PLL
+	while((CRM->cfg & (2 << 2)) != (2 << 2)) // Жду, пока произойдёт переключение
+	{
+	}
+
+	CRM->ctrl &= ~(1 << 0); //Выключаю HICK
+
+	return 0;
+}
 
 void port_init_output(void)
 {
